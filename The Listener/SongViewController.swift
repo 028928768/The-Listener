@@ -70,23 +70,30 @@ class SongViewController: UIViewController, UITableViewDelegate, UITableViewData
 
            secondVC.selectedSongName = songs[selectedSongRow].name
            secondVC.selectedSongArtist = songs[selectedSongRow].artist
-            secondVC.selectedSongAlbum = songs[selectedSongRow].album
+           secondVC.selectedSongAlbum = songs[selectedSongRow].album
+            secondVC.selectedSongImage = songs[selectedSongRow].cover!
+            
         }
         
     }
     
         
         private func loadSampleSongs(){
-            guard let song1 = Song(name: "Problem",artist: "Ariana Grande",album: "My Everything") else {
+            
+            let song1Cover = UIImage(named: "Problem-Cover")
+            let song2Cover = UIImage(named: "Prism-Cover")
+            let song3Cover = UIImage(named: "FirstTime-Cover")
+            let song4Cover = UIImage(named: "Havana-Cover")
+            guard let song1 = Song(name: "Problem",artist: "Ariana Grande",album: "My Everything",cover: song1Cover!) else {
                 fatalError("Unable to instatiate song1")
             }
-            guard let song2 = Song(name: "Dark Horse",artist: "Katy Perry",album: "Prism") else {
+            guard let song2 = Song(name: "Dark Horse",artist: "Katy Perry",album: "Prism",cover: song2Cover!) else {
                 fatalError("Unable to instatiate song2")
             }
-            guard let song3 = Song(name: "First Time",artist: "Kygo,Ellie Goulding",album: "Stargazing") else {
+            guard let song3 = Song(name: "First Time",artist: "Kygo,Ellie Goulding",album: "Stargazing",cover: song3Cover!) else {
                 fatalError("Unable to instatiate song3")
             }
-            guard let song4 = Song(name: "Havana",artist: "Camila Cabello;feat. Young Thug",album:"Camila") else {
+            guard let song4 = Song(name: "Havana",artist: "Camila Cabello;feat. Young Thug",album:"Camila",cover: song4Cover!) else {
                 fatalError("Unable to instatiate song4")
             }
             songs += [song1,song2,song3,song4]

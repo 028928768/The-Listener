@@ -15,6 +15,7 @@ class SongPlayerViewController: UIViewController {
     var selectedSongName: String = ""
     var selectedSongArtist: String = ""
     var selectedSongAlbum: String = ""
+    var selectedSongImage: UIImage = #imageLiteral(resourceName: "Havana-Cover")
  
     
     //MARK: Outlets
@@ -22,6 +23,7 @@ class SongPlayerViewController: UIViewController {
     @IBOutlet weak var songPlayingArtist: UILabel!
     @IBOutlet weak var songPlayingAlbum: UILabel!
     @IBOutlet weak var Slider: UISlider!
+    @IBOutlet weak var songCover: UIImageView!
     //MARK: Audio Player
     var audioPlayer = AVAudioPlayer()
     
@@ -31,6 +33,7 @@ class SongPlayerViewController: UIViewController {
         songPlayingName.text = selectedSongName
         songPlayingAlbum.text = selectedSongAlbum
         songPlayingArtist.text = selectedSongArtist
+        songCover.image = selectedSongImage
         
         
         do {

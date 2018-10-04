@@ -15,11 +15,11 @@ class Song {
     var name: String
     var artist: String
     var album: String
-   // var photo: UIImage?
+    var cover: UIImage?
     
     //MARK: Initialization
     
-    init?(name: String,artist: String,album: String){
+    init?(name: String,artist: String,album: String,cover: UIImage){
         
         //Check condition of initializer
         if name.isEmpty {
@@ -30,6 +30,7 @@ class Song {
         self.name = name
         self.artist = artist
         self.album = album
-       // self.photo = photo
+        self.cover = cover
+        
     }
 }
