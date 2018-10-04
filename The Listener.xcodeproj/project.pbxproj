@@ -15,6 +15,14 @@
 		610B79562144E86500AEEC0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 610B79542144E86500AEEC0C /* LaunchScreen.storyboard */; };
 		610B79612144E86500AEEC0C /* The_ListenerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610B79602144E86500AEEC0C /* The_ListenerTests.swift */; };
 		610B796C2144E86500AEEC0C /* The_ListenerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610B796B2144E86500AEEC0C /* The_ListenerUITests.swift */; };
+		612840612157C945006E9A99 /* SongTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612840602157C945006E9A99 /* SongTableViewCell.swift */; };
+		612840652157D787006E9A99 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612840642157D787006E9A99 /* Song.swift */; };
+		612840672157EB11006E9A99 /* SongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612840662157EB11006E9A99 /* SongViewController.swift */; };
+		615688822165E4480096C94F /* SongPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615688812165E4480096C94F /* SongPlayerViewController.swift */; };
+		61568884216613120096C94F /* Havana.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 61568883216613120096C94F /* Havana.mp3 */; };
+		61658A7721627BC500B5D46E /* Dark Horse.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 61658A7421627BC300B5D46E /* Dark Horse.mp3 */; };
+		61658A7821627BC500B5D46E /* First Time.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 61658A7521627BC400B5D46E /* First Time.mp3 */; };
+		61658A7921627BC500B5D46E /* Problem.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 61658A7621627BC500B5D46E /* Problem.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		610B79672144E86500AEEC0C /* The ListenerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The ListenerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		610B796B2144E86500AEEC0C /* The_ListenerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_ListenerUITests.swift; sourceTree = "<group>"; };
 		610B796D2144E86500AEEC0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		612840602157C945006E9A99 /* SongTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongTableViewCell.swift; sourceTree = "<group>"; };
+		612840642157D787006E9A99 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		612840662157EB11006E9A99 /* SongViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongViewController.swift; sourceTree = "<group>"; };
+		615688812165E4480096C94F /* SongPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongPlayerViewController.swift; sourceTree = "<group>"; };
+		61568883216613120096C94F /* Havana.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Havana.mp3; sourceTree = "<group>"; };
+		61658A7421627BC300B5D46E /* Dark Horse.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Dark Horse.mp3"; sourceTree = "<group>"; };
+		61658A7521627BC400B5D46E /* First Time.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "First Time.mp3"; sourceTree = "<group>"; };
+		61658A7621627BC500B5D46E /* Problem.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Problem.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +117,16 @@
 			children = (
 				610B79482144E86500AEEC0C /* AppDelegate.swift */,
 				610B794A2144E86500AEEC0C /* ViewController.swift */,
+				612840602157C945006E9A99 /* SongTableViewCell.swift */,
 				610B794C2144E86500AEEC0C /* Main.storyboard */,
+				612840662157EB11006E9A99 /* SongViewController.swift */,
+				612840642157D787006E9A99 /* Song.swift */,
+				615688812165E4480096C94F /* SongPlayerViewController.swift */,
 				610B79522144E86500AEEC0C /* Assets.xcassets */,
 				610B79542144E86500AEEC0C /* LaunchScreen.storyboard */,
 				610B79572144E86500AEEC0C /* Info.plist */,
 				610B794F2144E86500AEEC0C /* The_Listener.xcdatamodeld */,
+				61658A7321627B0600B5D46E /* Songs */,
 			);
 			path = "The Listener";
 			sourceTree = "<group>";
@@ -126,6 +147,17 @@
 				610B796D2144E86500AEEC0C /* Info.plist */,
 			);
 			path = "The ListenerUITests";
+			sourceTree = "<group>";
+		};
+		61658A7321627B0600B5D46E /* Songs */ = {
+			isa = PBXGroup;
+			children = (
+				61568883216613120096C94F /* Havana.mp3 */,
+				61658A7421627BC300B5D46E /* Dark Horse.mp3 */,
+				61658A7521627BC400B5D46E /* First Time.mp3 */,
+				61658A7621627BC500B5D46E /* Problem.mp3 */,
+			);
+			path = Songs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +229,11 @@
 					610B79442144E86500AEEC0C = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					610B795B2144E86500AEEC0C = {
 						CreatedOnToolsVersion = 9.2;
@@ -235,9 +272,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61568884216613120096C94F /* Havana.mp3 in Resources */,
 				610B79562144E86500AEEC0C /* LaunchScreen.storyboard in Resources */,
+				61658A7821627BC500B5D46E /* First Time.mp3 in Resources */,
 				610B79532144E86500AEEC0C /* Assets.xcassets in Resources */,
 				610B794E2144E86500AEEC0C /* Main.storyboard in Resources */,
+				61658A7921627BC500B5D46E /* Problem.mp3 in Resources */,
+				61658A7721627BC500B5D46E /* Dark Horse.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +303,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				612840652157D787006E9A99 /* Song.swift in Sources */,
+				612840612157C945006E9A99 /* SongTableViewCell.swift in Sources */,
 				610B794B2144E86500AEEC0C /* ViewController.swift in Sources */,
 				610B79492144E86500AEEC0C /* AppDelegate.swift in Sources */,
+				615688822165E4480096C94F /* SongPlayerViewController.swift in Sources */,
 				610B79512144E86500AEEC0C /* The_Listener.xcdatamodeld in Sources */,
+				612840672157EB11006E9A99 /* SongViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
