@@ -87,7 +87,7 @@ class SongViewController: UIViewController, UITableViewDelegate, UITableViewData
             guard let song1 = Song(name: "Problem",artist: "Ariana Grande",album: "My Everything",cover: song1Cover!) else {
                 fatalError("Unable to instatiate song1")
             }
-            guard let song2 = Song(name: "Dark Horse",artist: "Katy Perry",album: "Prism",cover: song2Cover!) else {
+            guard let song2 = Song(name: "Dark Horse",artist: "Katy Perry",album: "Prism",cover:song2Cover!) else {
                 fatalError("Unable to instatiate song2")
             }
             guard let song3 = Song(name: "First Time",artist: "Kygo,Ellie Goulding",album: "Stargazing",cover: song3Cover!) else {

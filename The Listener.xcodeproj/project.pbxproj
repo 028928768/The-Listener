@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		610A49AA2166882300C22EA4 /* Dark Horse.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 610A49A92166882300C22EA4 /* Dark Horse.mp3 */; };
 		610B79492144E86500AEEC0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610B79482144E86500AEEC0C /* AppDelegate.swift */; };
 		610B794B2144E86500AEEC0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610B794A2144E86500AEEC0C /* ViewController.swift */; };
 		610B794E2144E86500AEEC0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 610B794C2144E86500AEEC0C /* Main.storyboard */; };
@@ -20,7 +21,6 @@
 		612840672157EB11006E9A99 /* SongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612840662157EB11006E9A99 /* SongViewController.swift */; };
 		615688822165E4480096C94F /* SongPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615688812165E4480096C94F /* SongPlayerViewController.swift */; };
 		61568884216613120096C94F /* Havana.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 61568883216613120096C94F /* Havana.mp3 */; };
-		61658A7721627BC500B5D46E /* Dark Horse.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 61658A7421627BC300B5D46E /* Dark Horse.mp3 */; };
 		61658A7821627BC500B5D46E /* First Time.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 61658A7521627BC400B5D46E /* First Time.mp3 */; };
 		61658A7921627BC500B5D46E /* Problem.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 61658A7621627BC500B5D46E /* Problem.mp3 */; };
 /* End PBXBuildFile section */
@@ -43,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		610A49A92166882300C22EA4 /* Dark Horse.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Dark Horse.mp3"; sourceTree = "<group>"; };
 		610B79452144E86500AEEC0C /* The Listener.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Listener.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		610B79482144E86500AEEC0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		610B794A2144E86500AEEC0C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,7 +63,6 @@
 		612840662157EB11006E9A99 /* SongViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongViewController.swift; sourceTree = "<group>"; };
 		615688812165E4480096C94F /* SongPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongPlayerViewController.swift; sourceTree = "<group>"; };
 		61568883216613120096C94F /* Havana.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Havana.mp3; sourceTree = "<group>"; };
-		61658A7421627BC300B5D46E /* Dark Horse.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Dark Horse.mp3"; sourceTree = "<group>"; };
 		61658A7521627BC400B5D46E /* First Time.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "First Time.mp3"; sourceTree = "<group>"; };
 		61658A7621627BC500B5D46E /* Problem.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Problem.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -152,8 +152,8 @@
 		61658A7321627B0600B5D46E /* Songs */ = {
 			isa = PBXGroup;
 			children = (
+				610A49A92166882300C22EA4 /* Dark Horse.mp3 */,
 				61568883216613120096C94F /* Havana.mp3 */,
-				61658A7421627BC300B5D46E /* Dark Horse.mp3 */,
 				61658A7521627BC400B5D46E /* First Time.mp3 */,
 				61658A7621627BC500B5D46E /* Problem.mp3 */,
 			);
@@ -278,7 +278,7 @@
 				610B79532144E86500AEEC0C /* Assets.xcassets in Resources */,
 				610B794E2144E86500AEEC0C /* Main.storyboard in Resources */,
 				61658A7921627BC500B5D46E /* Problem.mp3 in Resources */,
-				61658A7721627BC500B5D46E /* Dark Horse.mp3 in Resources */,
+				610A49AA2166882300C22EA4 /* Dark Horse.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

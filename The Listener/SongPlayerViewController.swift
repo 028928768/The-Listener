@@ -24,6 +24,8 @@ class SongPlayerViewController: UIViewController {
     @IBOutlet weak var songPlayingAlbum: UILabel!
     @IBOutlet weak var Slider: UISlider!
     @IBOutlet weak var songCover: UIImageView!
+    @IBOutlet weak var currentTime: UILabel!
+    @IBOutlet weak var leftTime: UILabel!
     //MARK: Audio Player
     var audioPlayer = AVAudioPlayer()
     
@@ -43,7 +45,7 @@ class SongPlayerViewController: UIViewController {
             
             //Slider Code
             Slider.maximumValue = Float(audioPlayer.duration)
-            var SliderTime = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateSlider), userInfo: nil, repeats: true)
+            Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateSliderAndTime), userInfo: nil, repeats: true)
             
             let audioSession = AVAudioSession.sharedInstance()
             
@@ -103,9 +105,23 @@ class SongPlayerViewController: UIViewController {
         
     }
     
-    @objc func updateSlider() {
+    @objc func updateSliderAndTime() {
         Slider.value = Float(audioPlayer.currentTime)
         NSLog("Hi")
+        
+        currentTime.text = FormatTimePlay(Duration: Int(audioPlayer.currentTime))
+        let timeLeft = Int(audioPlayer.duration) - Int(audioPlayer.currentTime)
+        leftTime.text = FormatTimePlay(Duration: timeLeft)
     }
+    
+    func FormatTimePlay(Duration: Int) -> String {
+        let m: Int = Int(Duration)/60
+        let s: Int = Int(Duration)%60
+        
+        let formattedDuration = String(format: "%0d:%02d", m, s)
+        return formattedDuration
+        
+    }
+    
     
 }
