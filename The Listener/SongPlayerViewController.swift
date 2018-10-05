@@ -89,18 +89,14 @@ class SongPlayerViewController: UIViewController {
         }
      
     }
-    @IBAction func PauseButton(_ sender: Any) {
-        if audioPlayer.isPlaying {
-            audioPlayer.pause()
-        } else {
-            
-        }
-    }
+   
     @IBAction func Restart(_ sender: Any) {
         if audioPlayer.isPlaying {
             audioPlayer.currentTime = 0
             audioPlayer.play()
         } else {
+            audioPlayer.currentTime = 0
+            audioPlayer.prepareToPlay()
             
         }
     }
