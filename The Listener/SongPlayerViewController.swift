@@ -16,6 +16,14 @@ class SongPlayerViewController: UIViewController,AVAudioPlayerDelegate {
     var currrentSongIntex : Int = 0
     var SongLists : Song?
     var repeatClick: Int = 0
+    
+    //MARK: IMages
+    let playButtonImage = UIImage(named: "play-buttonIMG")
+    let pauseButtonImage = UIImage(named: "pause-buttonIMG")
+    let restartButtonImage = UIImage(named: "restart-buttonIMG")
+    let nextButtonImage = UIImage(named: "next-buttonIMG")
+    let prevButtonImage = UIImage(named: "prev-buttonIMG")
+    let shuffleButtonImage = UIImage(named: "shuffle-buttonIMG")
     //var yourArray = [Song]()
     
 
@@ -32,6 +40,9 @@ class SongPlayerViewController: UIViewController,AVAudioPlayerDelegate {
     @IBOutlet weak var leftTime: UILabel!
     @IBOutlet weak var playButtonOutlet: UIButton!
     @IBOutlet weak var repeatButton: UIButton!
+    @IBOutlet weak var restartButton: UIButton!
+    @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var prevButton: UIButton!
     
     //MARK: Audio Player
     var audioPlayer = AVAudioPlayer()
@@ -39,7 +50,12 @@ class SongPlayerViewController: UIViewController,AVAudioPlayerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-   
+        assignBackGround()
+        playButtonOutlet.setImage(playButtonImage, for: .normal)
+        restartButton.setImage(restartButtonImage, for: .normal)
+        repeatButton.setImage(shuffleButtonImage, for: .normal)
+        nextButton.setImage(nextButtonImage, for: .normal)
+        prevButton.setImage(prevButtonImage, for: .normal)
         if let song = selectSongList {
             songPlayingName.text = song.name
             songPlayingAlbum.text = song.album
@@ -97,7 +113,7 @@ class SongPlayerViewController: UIViewController,AVAudioPlayerDelegate {
         if audioPlayer.isPlaying {
             audioPlayer.pause()
           //  playButtonOutlet.setTitle("Play", for: .normal)
-            playButtonOutlet.setImage(#imageLiteral(resourceName: "play-buttonIMG"), for: .normal)
+            playButtonOutlet.setImage(playButtonImage, for: .normal)
         } else {
             audioPlayer.play()
             playButtonOutlet.setImage(#imageLiteral(resourceName: "pause-buttonIMG"), for: .normal)
@@ -124,7 +140,7 @@ class SongPlayerViewController: UIViewController,AVAudioPlayerDelegate {
         if repeatClick == 2 {
             audioPlayer.numberOfLoops = 0
             repeatClick = 0
-            repeatButton.setTitle("Repeat1", for: .normal)
+            repeatButton.setImage(shuffleButtonImage, for: .normal)
         }
     }
     
@@ -154,6 +170,16 @@ class SongPlayerViewController: UIViewController,AVAudioPlayerDelegate {
         let formattedDuration = String(format: "%0d:%02d", m, s)
         return formattedDuration
         
+    }
+    func assignBackGround(){
+        let background = UIImage(named: "OriginalBGIMG")
+        let imageView = UIImageView(frame: view.bounds)
+        imageView.contentMode = UIViewContentMode.scaleAspectFill
+        imageView.clipsToBounds = true
+        imageView.image = background
+        imageView.center = view.center
+        view.addSubview(imageView)
+        self.view.sendSubview(toBack: imageView)
     }
     
     
