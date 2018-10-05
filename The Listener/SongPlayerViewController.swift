@@ -12,8 +12,15 @@ import AVFoundation
 
 class SongPlayerViewController: UIViewController,AVAudioPlayerDelegate {
     //MARK: Properties
+    var selectSongList : Song?
+    var currrentSongIntex : Int = 0
+    var SongLists : Song?
     var repeatClick: Int = 0
-    var song : Song?
+    //var yourArray = [Song]()
+    
+
+    
+    var currentSongIndex: Int = 0
     
     //MARK: Outlets
     @IBOutlet weak var songPlayingName: UILabel!
@@ -33,7 +40,7 @@ class SongPlayerViewController: UIViewController,AVAudioPlayerDelegate {
         super.viewDidLoad()
         
    
-        if let song = song {
+        if let song = selectSongList {
             songPlayingName.text = song.name
             songPlayingAlbum.text = song.album
             songPlayingArtist.text = song.artist
@@ -41,7 +48,7 @@ class SongPlayerViewController: UIViewController,AVAudioPlayerDelegate {
         }
         
         do {
-            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: song?.name, ofType: "mp3")!))
+            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: selectSongList?.name, ofType: "mp3")!))
             audioPlayer.prepareToPlay()
             
             audioPlayer.delegate = self
@@ -63,6 +70,8 @@ class SongPlayerViewController: UIViewController,AVAudioPlayerDelegate {
     }
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
         playButtonOutlet.setTitle("Play", for: .normal)
+        // Increment song index but don't go out of bounds
+   //     currentSongIndex = currentSongIndex += 1 % 
     }
 
     
@@ -87,10 +96,11 @@ class SongPlayerViewController: UIViewController,AVAudioPlayerDelegate {
     @IBAction func playAndPauseButton (_ sender: Any) {
         if audioPlayer.isPlaying {
             audioPlayer.pause()
-            playButtonOutlet.setTitle("Play", for: .normal)
+          //  playButtonOutlet.setTitle("Play", for: .normal)
+            playButtonOutlet.setImage(#imageLiteral(resourceName: "play-buttonIMG"), for: .normal)
         } else {
             audioPlayer.play()
-            playButtonOutlet.setTitle("Pause", for: .normal)
+            playButtonOutlet.setImage(#imageLiteral(resourceName: "pause-buttonIMG"), for: .normal)
         }
      
     }

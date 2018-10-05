@@ -38,7 +38,7 @@ class SongViewController: UIViewController, UITableViewDelegate, UITableViewData
         
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        assignBackGround()
         loadSampleSongs()
     }
 
@@ -60,13 +60,18 @@ class SongViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.prepare(for: segue, sender: sender)
         if segue.identifier == "tabToPlay" {
         let secondVC: SongPlayerViewController = segue.destination as! SongPlayerViewController
-            secondVC.song = songs[songTableView.indexPathForSelectedRow!.row]
-       
-        }
+            
+            let selectedSongIndex = songTableView.indexPathForSelectedRow!.row
+            secondVC.currentSongIndex = selectedSongIndex
+          //  secondVC.selectSongList = songs[songTableView.indexPathForSelectedRow!.row]
+            secondVC.selectSongList = songs[selectedSongIndex]
+           
+            
+            
         
     }
     
-        
+    }
         private func loadSampleSongs(){
             
             let song1Cover = UIImage(named: "Problem-Cover")
@@ -87,6 +92,16 @@ class SongViewController: UIViewController, UITableViewDelegate, UITableViewData
             }
             songs += [song1,song2,song3,song4]
         }
+    func assignBackGround(){
+        let background = UIImage(named: "StorageBGIMG")
+        var imageView = UIImageView(frame: view.bounds)
+        imageView.contentMode = UIViewContentMode.scaleAspectFill
+        imageView.clipsToBounds = true
+        imageView.image = background
+        imageView.center = view.center
+        view.addSubview(imageView)
+        self.view.sendSubview(toBack: imageView)
+    }
 }
 
 extension ViewController: UITableViewDelegate {
