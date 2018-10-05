@@ -10,13 +10,10 @@ import UIKit
 import AVFoundation
 
 
-class SongPlayerViewController: UIViewController {
+class SongPlayerViewController: UIViewController,AVAudioPlayerDelegate {
     //MARK: Properties
-    var selectedSongName: String = ""
-    var selectedSongArtist: String = ""
-    var selectedSongAlbum: String = ""
-    var selectedSongImage: UIImage = #imageLiteral(resourceName: "Havana-Cover")
- 
+    var repeatClick: Int = 0
+    var song : Song?
     
     //MARK: Outlets
     @IBOutlet weak var songPlayingName: UILabel!
@@ -27,22 +24,27 @@ class SongPlayerViewController: UIViewController {
     @IBOutlet weak var currentTime: UILabel!
     @IBOutlet weak var leftTime: UILabel!
     @IBOutlet weak var playButtonOutlet: UIButton!
+    @IBOutlet weak var repeatButton: UIButton!
+    
     //MARK: Audio Player
     var audioPlayer = AVAudioPlayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        songPlayingName.text = selectedSongName
-        songPlayingAlbum.text = selectedSongAlbum
-        songPlayingArtist.text = selectedSongArtist
-        songCover.image = selectedSongImage
-        
+   
+        if let song = song {
+            songPlayingName.text = song.name
+            songPlayingAlbum.text = song.album
+            songPlayingArtist.text = song.artist
+            songCover.image = song.cover!
+        }
         
         do {
-            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: selectedSongName, ofType: "mp3")!))
+            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: song?.name, ofType: "mp3")!))
             audioPlayer.prepareToPlay()
             
+            audioPlayer.delegate = self
             
             //Slider Code
             Slider.maximumValue = Float(audioPlayer.duration)
@@ -58,6 +60,9 @@ class SongPlayerViewController: UIViewController {
         } catch {
             print(error)
         }
+    }
+    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        playButtonOutlet.setTitle("Play", for: .normal)
     }
 
     
@@ -79,7 +84,7 @@ class SongPlayerViewController: UIViewController {
     */
 
     //MARK: Button
-    @IBAction func PlayButton(_ sender: Any) {
+    @IBAction func playAndPauseButton (_ sender: Any) {
         if audioPlayer.isPlaying {
             audioPlayer.pause()
             playButtonOutlet.setTitle("Play", for: .normal)
@@ -100,6 +105,18 @@ class SongPlayerViewController: UIViewController {
             
         }
     }
+    @IBAction func setRepeatMode(_ sender: Any) {
+        repeatClick = repeatClick + 1
+        if repeatClick == 1 {
+            audioPlayer.numberOfLoops = -1
+            repeatButton.setTitle("non", for: .normal)
+        }
+        if repeatClick == 2 {
+            audioPlayer.numberOfLoops = 0
+            repeatClick = 0
+            repeatButton.setTitle("Repeat1", for: .normal)
+        }
+    }
     
     @IBAction func ChangeAudioTime(_ sender: Any) {
         audioPlayer.stop()
@@ -116,6 +133,8 @@ class SongPlayerViewController: UIViewController {
         currentTime.text = FormatTimePlay(Duration: Int(audioPlayer.currentTime))
         let timeLeft = Int(audioPlayer.duration) - Int(audioPlayer.currentTime)
         leftTime.text = FormatTimePlay(Duration: timeLeft)
+        
+        
     }
     
     func FormatTimePlay(Duration: Int) -> String {

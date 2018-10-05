@@ -59,20 +59,9 @@ class SongViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
         if segue.identifier == "tabToPlay" {
-        var secondVC: SongPlayerViewController = segue.destination as! SongPlayerViewController
-        
-        /*    guard let selectedSongCell = sender as? SongTableViewCell else {
-                fatalError("Select song error!")
-            } */
-            
-            let selectedSongRow = songTableView.indexPathForSelectedRow!.row
-
-
-           secondVC.selectedSongName = songs[selectedSongRow].name
-           secondVC.selectedSongArtist = songs[selectedSongRow].artist
-           secondVC.selectedSongAlbum = songs[selectedSongRow].album
-            secondVC.selectedSongImage = songs[selectedSongRow].cover!
-            
+        let secondVC: SongPlayerViewController = segue.destination as! SongPlayerViewController
+            secondVC.song = songs[songTableView.indexPathForSelectedRow!.row]
+       
         }
         
     }

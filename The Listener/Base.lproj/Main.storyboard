@@ -263,7 +263,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Play"/>
                                 <connections>
-                                    <action selector="PlayButton:" destination="euK-Ge-4OR" eventType="touchUpInside" id="Hcu-N0-FXQ"/>
+                                    <action selector="playAndPauseButton:" destination="euK-Ge-4OR" eventType="touchUpInside" id="i0F-av-hzQ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Song Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rPq-fB-XhC">
@@ -336,6 +336,14 @@ EEFydGlzdCBOYW1lA
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWP-UW-kCc">
+                                <rect key="frame" x="287" y="481" width="55" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Repeat1"/>
+                                <connections>
+                                    <action selector="setRepeatMode:" destination="euK-Ge-4OR" eventType="touchUpInside" id="aRk-Ox-JV1"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKB-Vz-lY4">
                                 <rect key="frame" x="24" y="481" width="65" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -353,6 +361,7 @@ EEFydGlzdCBOYW1lA
                         <outlet property="currentTime" destination="yux-99-6QR" id="Wzi-5y-fbK"/>
                         <outlet property="leftTime" destination="JNV-mp-7Y9" id="JTB-wc-8xj"/>
                         <outlet property="playButtonOutlet" destination="Ogz-8H-mLl" id="q4m-V6-y0X"/>
+                        <outlet property="repeatButton" destination="ZWP-UW-kCc" id="DRc-YY-KWf"/>
                         <outlet property="songCover" destination="IAc-bp-rOy" id="NgC-RN-KIE"/>
                         <outlet property="songPlayingAlbum" destination="h1I-0w-R8T" id="3cJ-Pz-gkb"/>
                         <outlet property="songPlayingArtist" destination="rIc-EG-OaU" id="XTF-0f-KK7"/>
