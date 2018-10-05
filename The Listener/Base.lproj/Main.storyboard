@@ -360,6 +360,7 @@ EEFydGlzdCBOYW1lA
                         <outlet property="Slider" destination="off-qc-qg7" id="fiB-uV-7Jf"/>
                         <outlet property="currentTime" destination="yux-99-6QR" id="Wzi-5y-fbK"/>
                         <outlet property="leftTime" destination="JNV-mp-7Y9" id="JTB-wc-8xj"/>
+                        <outlet property="playButtonOutlet" destination="Ogz-8H-mLl" id="q4m-V6-y0X"/>
                         <outlet property="songCover" destination="IAc-bp-rOy" id="NgC-RN-KIE"/>
                         <outlet property="songPlayingAlbum" destination="h1I-0w-R8T" id="3cJ-Pz-gkb"/>
                         <outlet property="songPlayingArtist" destination="rIc-EG-OaU" id="XTF-0f-KK7"/>

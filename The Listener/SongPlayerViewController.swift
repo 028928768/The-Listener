@@ -26,6 +26,7 @@ class SongPlayerViewController: UIViewController {
     @IBOutlet weak var songCover: UIImageView!
     @IBOutlet weak var currentTime: UILabel!
     @IBOutlet weak var leftTime: UILabel!
+    @IBOutlet weak var playButtonOutlet: UIButton!
     //MARK: Audio Player
     var audioPlayer = AVAudioPlayer()
     
@@ -79,7 +80,14 @@ class SongPlayerViewController: UIViewController {
 
     //MARK: Button
     @IBAction func PlayButton(_ sender: Any) {
-        audioPlayer.play()
+        if audioPlayer.isPlaying {
+            audioPlayer.pause()
+            playButtonOutlet.setTitle("Play", for: .normal)
+        } else {
+            audioPlayer.play()
+            playButtonOutlet.setTitle("Pause", for: .normal)
+        }
+     
     }
     @IBAction func PauseButton(_ sender: Any) {
         if audioPlayer.isPlaying {
