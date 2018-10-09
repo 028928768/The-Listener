@@ -13,8 +13,10 @@ import AVFoundation
 class SongPlayerViewController: UIViewController,AVAudioPlayerDelegate {
     //MARK: Properties
     var selectSongList : Song?
-    var currrentSongIntex : Int = 0
-    var SongLists : Song?
+
+    
+    var currentSongIndex : Int = 0
+    var SongLists : [Song] = []
     var repeatClick: Int = 0
     
     //MARK: IMages
@@ -29,8 +31,6 @@ class SongPlayerViewController: UIViewController,AVAudioPlayerDelegate {
     //var yourArray = [Song]()
     
 
-    
-    var currentSongIndex: Int = 0
     
     //MARK: Outlets
     @IBOutlet weak var songPlayingName: UILabel!
@@ -48,6 +48,7 @@ class SongPlayerViewController: UIViewController,AVAudioPlayerDelegate {
     
     //MARK: Audio Player
     var audioPlayer = AVAudioPlayer()
+    let queuePlayer = AVQueuePlayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,16 +61,23 @@ class SongPlayerViewController: UIViewController,AVAudioPlayerDelegate {
         nextButton.setImage(nextButtonImage, for: .normal)
         prevButton.setImage(prevButtonImage, for: .normal)
         
-        if let song = selectSongList {
-            songPlayingName.text = song.name
-            songPlayingAlbum.text = song.album
-            songPlayingArtist.text = song.artist
-            songCover.image = song.cover!
-        }
+        playCurrentSong()
         
+        
+     
+    }
+    func playCurrentSong() {
+        
+        // Fetch Song data
+        songPlayingName.text = SongLists[currentSongIndex].name
+        songPlayingAlbum.text = SongLists[currentSongIndex].album
+        songPlayingArtist.text = SongLists[currentSongIndex].artist
+        songCover.image = SongLists[currentSongIndex].cover
         do {
-            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: selectSongList?.name, ofType: "mp3")!))
+            
+            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: SongLists[currentSongIndex].name, ofType: "mp3")!))
             audioPlayer.prepareToPlay()
+            
             
             audioPlayer.delegate = self
             
@@ -92,7 +100,15 @@ class SongPlayerViewController: UIViewController,AVAudioPlayerDelegate {
         audioPlayer.prepareToPlay()
         playButtonOutlet.setImage(playButtonImage, for: .normal)
         // Increment song index but don't go out of bounds
-   //     currentSongIndex = currentSongIndex += 1 % 
+        if currentSongIndex == SongLists.count-1 {
+            currentSongIndex = 0
+        } else {
+            currentSongIndex = currentSongIndex + 1
+        }
+        
+        playCurrentSong()
+        audioPlayer.play()
+        playButtonOutlet.setImage(pauseButtonImage, for: .normal)
     }
 
     

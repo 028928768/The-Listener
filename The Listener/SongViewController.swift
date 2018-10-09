@@ -64,7 +64,8 @@ class SongViewController: UIViewController, UITableViewDelegate, UITableViewData
             let selectedSongIndex = songTableView.indexPathForSelectedRow!.row
             secondVC.currentSongIndex = selectedSongIndex
           //  secondVC.selectSongList = songs[songTableView.indexPathForSelectedRow!.row]
-            secondVC.selectSongList = songs[selectedSongIndex]
+         //   secondVC.selectSongList = songs[selectedSongIndex]
+            secondVC.SongLists = songs
            
             
             
