@@ -9,7 +9,10 @@
 import UIKit
 
 class SongViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    let arrowButtonImage = UIImage(named: "arrow-buttonIMG")
+    
+    
+    
     @IBOutlet weak var songTableView: UITableView!
         var songs = [Song]()
     
@@ -31,7 +34,7 @@ class SongViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.songNameLabel.text = song.name
         cell.artistSongLabel.text = song.artist
         cell.albumSongLabel.text = song.album
-        
+        cell.arrowButton.image = arrowButtonImage
         return cell
     }
   
@@ -40,6 +43,7 @@ class SongViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         assignBackGround()
         loadSampleSongs()
+        
     }
 
     override func didReceiveMemoryWarning() {

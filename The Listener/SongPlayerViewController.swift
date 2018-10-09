@@ -151,6 +151,48 @@ class SongPlayerViewController: UIViewController,AVAudioPlayerDelegate {
             
         }
     }
+    @IBAction func nextSongAction(_ sender: Any) {
+        if audioPlayer.isPlaying {
+            if currentSongIndex == SongLists.count-1 {
+                currentSongIndex = 0
+            } else {
+                currentSongIndex = currentSongIndex + 1
+            }
+            playCurrentSong()
+            audioPlayer.play()
+            playButtonOutlet.setImage(pauseButtonImage, for: .normal)
+        } else {
+            if currentSongIndex == SongLists.count-1 {
+                currentSongIndex = 0
+            } else {
+                currentSongIndex = currentSongIndex + 1
+            }
+            playCurrentSong()
+            playButtonOutlet.setImage(playButtonImage, for: .normal)
+        }
+        
+    }
+    @IBAction func prevSongAction(_ sender: Any) {
+        if audioPlayer.isPlaying {
+            if currentSongIndex == 0 {
+                currentSongIndex = SongLists.count - 1
+            } else {
+                currentSongIndex = currentSongIndex - 1
+            }
+            playCurrentSong()
+            audioPlayer.play()
+            playButtonOutlet.setImage(pauseButtonImage, for: .normal)
+        } else {
+            if currentSongIndex == 0 {
+                currentSongIndex = SongLists.count - 1
+            } else {
+                currentSongIndex = currentSongIndex - 1
+            }
+            playCurrentSong()
+            playButtonOutlet.setImage(playButtonImage, for: .normal)
+        }
+       
+    }
     @IBAction func setRepeatMode(_ sender: Any) {
         repeatClick = repeatClick + 1
         if repeatClick == 1 {
