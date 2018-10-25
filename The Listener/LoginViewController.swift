@@ -11,9 +11,10 @@ import UIKit
 class LoginViewController: UIViewController {
     //MARK Images
     let logoImage = UIImage(named: "LogoIMG")
-    
+    let loginPanelImage = UIImage(named: "LoginPanelIMG")
     //MARK Properties
     @IBOutlet weak var Logo: UIImageView!
+    @IBOutlet weak var LoginPanelOutlet: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +25,7 @@ class LoginViewController: UIViewController {
     
     func assignBackGround(){
         let background = UIImage(named: "LoginBackGroundIMG")
-        var imageView = UIImageView(frame: view.bounds)
+        let imageView = UIImageView(frame: view.bounds)
         imageView.contentMode = UIViewContentMode.scaleAspectFill
         imageView.clipsToBounds = true
         imageView.image = background
@@ -32,6 +33,7 @@ class LoginViewController: UIViewController {
         view.addSubview(imageView)
         self.view.sendSubview(toBack: imageView)
         Logo.image = logoImage
+        LoginPanelOutlet.image = loginPanelImage
     }
 
     /*

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		159FEE2B2181D10B005B0683 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159FEE2A2181D10B005B0683 /* LoginViewController.swift */; };
+		159FEE3521821280005B0683 /* ForgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159FEE3421821280005B0683 /* ForgetViewController.swift */; };
 		610A49AA2166882300C22EA4 /* Dark Horse.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 610A49A92166882300C22EA4 /* Dark Horse.mp3 */; };
 		610B79492144E86500AEEC0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610B79482144E86500AEEC0C /* AppDelegate.swift */; };
 		610B794B2144E86500AEEC0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610B794A2144E86500AEEC0C /* ViewController.swift */; };
@@ -45,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		159FEE2A2181D10B005B0683 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		159FEE3421821280005B0683 /* ForgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetViewController.swift; sourceTree = "<group>"; };
 		610A49A92166882300C22EA4 /* Dark Horse.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Dark Horse.mp3"; sourceTree = "<group>"; };
 		610B79452144E86500AEEC0C /* The Listener.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Listener.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		610B79482144E86500AEEC0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				610B794A2144E86500AEEC0C /* ViewController.swift */,
 				612840602157C945006E9A99 /* SongTableViewCell.swift */,
 				610B794C2144E86500AEEC0C /* Main.storyboard */,
+				159FEE3421821280005B0683 /* ForgetViewController.swift */,
 				159FEE2A2181D10B005B0683 /* LoginViewController.swift */,
 				612840642157D787006E9A99 /* Song.swift */,
 				612840662157EB11006E9A99 /* SongViewController.swift */,
@@ -314,6 +317,7 @@
 				615688822165E4480096C94F /* SongPlayerViewController.swift in Sources */,
 				610B79512144E86500AEEC0C /* The_Listener.xcdatamodeld in Sources */,
 				612840672157EB11006E9A99 /* SongViewController.swift in Sources */,
+				159FEE3521821280005B0683 /* ForgetViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
