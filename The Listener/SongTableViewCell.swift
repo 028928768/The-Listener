@@ -9,7 +9,7 @@
 import UIKit
 
 class SongTableViewCell: UITableViewCell {
-    //MARK: Properties
+    //MARK: Properties any declairation here
     
     @IBOutlet weak var songNameLabel: UILabel!
     @IBOutlet weak var artistSongLabel: UILabel!

@@ -12,9 +12,11 @@ class ForgetViewController: UIViewController {
     //MARK Images
     let backgroundImage = UIImage(named: "ForgetBackGroundIMG")
     let forgetLogoImage = UIImage(named:"ForgetLogoIMG" )
+    let forgetPanelImage = UIImage(named: "forgetPanelIMG")
     //MARK outlets
     @IBOutlet weak var backgroundOutlet: UIImageView!
     @IBOutlet weak var forgetLogo: UIImageView!
+    @IBOutlet weak var forgetPanelOutlet: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,6 +27,7 @@ class ForgetViewController: UIViewController {
     func assignBackGround(){
         backgroundOutlet.image = backgroundImage
         forgetLogo.image = forgetLogoImage
+        forgetPanelOutlet.image = forgetPanelImage
     }
 
     /*
