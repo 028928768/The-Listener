@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class RegisterViewController: UIViewController {
     //MARK Images
@@ -15,11 +16,15 @@ class RegisterViewController: UIViewController {
     //MARK Outlets
     @IBOutlet weak var registerPanel: UIImageView!
     @IBOutlet weak var registerPanelDetails: UIImageView!
+    @IBOutlet weak var registEmail: UITextField!
+    @IBOutlet weak var registPassword: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         assignBackGround()
     }
+    
+    //MARK Actions:
     
     func assignBackGround() {
         let background = UIImage(named: "RegisterBackGroundIMG")
@@ -34,6 +39,23 @@ class RegisterViewController: UIViewController {
         registerPanel.image = registerPanelImage
         registerPanelDetails.image = registerPanelDetailsImage
     }
+    
+    @IBAction func signUpMethod(_ sender: Any) {
+        Auth.auth().createUser(withEmail: registEmail.text!, password: registPassword.text!){ (user, error) in
+            if error == nil {
+                self.performSegue(withIdentifier: "SigninSuccess", sender: self)
+            }
+            else{
+                let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                
+                alertController.addAction(defaultAction)
+                self.present(alertController, animated: true, completion: nil)
+            }
+        }
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ForgetViewController: UIViewController {
     //MARK Images
@@ -17,19 +18,35 @@ class ForgetViewController: UIViewController {
     @IBOutlet weak var backgroundOutlet: UIImageView!
     @IBOutlet weak var forgetLogo: UIImageView!
     @IBOutlet weak var forgetPanelOutlet: UIImageView!
+    @IBOutlet weak var forgetEmail: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         assignBackGround()
     }
     
-    
+    //MARK Actions
     func assignBackGround(){
         backgroundOutlet.image = backgroundImage
         forgetLogo.image = forgetLogoImage
         forgetPanelOutlet.image = forgetPanelImage
     }
 
+    @IBAction func resendMethod(_ sender: Any) {
+        Auth.auth().sendPasswordReset(withEmail: forgetEmail.text!) { (error) in
+            if error == nil{
+                self.performSegue(withIdentifier: "ConfirmForget", sender: self)
+            }
+            else{
+                let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                
+                alertController.addAction(defaultAction)
+                self.present(alertController, animated: true, completion: nil)
+            }
+        }
+    }
     /*
     // MARK: - Navigation
 

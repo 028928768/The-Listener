@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginViewController: UIViewController {
     //MARK Images
@@ -15,6 +16,8 @@ class LoginViewController: UIViewController {
     //MARK Properties
     @IBOutlet weak var Logo: UIImageView!
     @IBOutlet weak var LoginPanelOutlet: UIImageView!
+    @IBOutlet weak var loginEmail: UITextField!
+    @IBOutlet weak var loginPassword: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +25,7 @@ class LoginViewController: UIViewController {
         
     }
     
+    //MARK Actions
     
     func assignBackGround(){
         let background = UIImage(named: "LoginBackGroundIMG")
@@ -36,6 +40,23 @@ class LoginViewController: UIViewController {
         LoginPanelOutlet.image = loginPanelImage
     }
 
+    @IBAction func loginMethod(_ sender: Any) {
+        
+        Auth.auth().signIn(withEmail: loginEmail.text!, password: loginPassword.text!) { (user, error) in
+            if error == nil{
+                self.performSegue(withIdentifier: "LoginToHome", sender: self)
+            }
+            else{
+                let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                
+                alertController.addAction(defaultAction)
+                self.present(alertController, animated: true, completion: nil)
+            }
+        }
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

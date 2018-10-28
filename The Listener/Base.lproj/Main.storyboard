@@ -35,7 +35,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="9y2-Kn-KIO" kind="show" id="4rG-go-Fpx"/>
+                                    <action selector="loginMethod:" destination="dCo-nm-Sk0" eventType="touchUpInside" id="XTk-Tr-fzi"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="@ 2018 egco" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ps8-Qh-N2X">
@@ -95,6 +95,9 @@
                     <connections>
                         <outlet property="LoginPanelOutlet" destination="eFm-Ac-jrT" id="Q4F-N2-lG0"/>
                         <outlet property="Logo" destination="8rn-oN-jBe" id="rW4-uJ-6eW"/>
+                        <outlet property="loginEmail" destination="Cje-7L-paf" id="YPm-DE-wyl"/>
+                        <outlet property="loginPassword" destination="0vH-Om-DCo" id="mJ1-YK-B5n"/>
+                        <segue destination="9y2-Kn-KIO" kind="show" identifier="LoginToHome" id="yHR-ks-vnD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w6P-5L-ohr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -162,7 +165,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="mCW-UZ-66t" kind="show" id="6jI-bj-PCq"/>
+                                    <action selector="resendMethod:" destination="GOy-RL-hUf" eventType="touchUpInside" id="SiN-j7-bFS"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="we'll send your password within your email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KRK-1U-FN2">
@@ -186,8 +189,10 @@
                     </view>
                     <connections>
                         <outlet property="backgroundOutlet" destination="stp-TD-7tH" id="lAb-3t-zds"/>
+                        <outlet property="forgetEmail" destination="WMk-I6-oVY" id="gRR-9K-eBz"/>
                         <outlet property="forgetLogo" destination="cox-32-sXd" id="R95-KC-CgU"/>
                         <outlet property="forgetPanelOutlet" destination="aAS-sX-Gv6" id="f0y-Bs-SYn"/>
+                        <segue destination="mCW-UZ-66t" kind="show" identifier="ConfirmForget" id="ZC5-ho-oZL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OVc-uI-m0J" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -254,14 +259,20 @@
                                 <state key="normal" title="Sign-up">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="signUpMethod:" destination="ylt-m2-taQ" eventType="touchUpInside" id="dWc-q0-sas"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="vTZ-BG-Ehn"/>
                     </view>
                     <connections>
+                        <outlet property="registEmail" destination="CQk-DQ-GAV" id="7eG-Ac-vo0"/>
+                        <outlet property="registPassword" destination="PCt-GN-B9C" id="Hke-HR-Ri5"/>
                         <outlet property="registerPanel" destination="kME-GI-Rkz" id="CxO-uE-AhS"/>
                         <outlet property="registerPanelDetails" destination="FRE-ah-X47" id="3Zp-me-Mln"/>
+                        <segue destination="dCo-nm-Sk0" kind="show" identifier="SigninSuccess" id="6oX-Ft-axR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rn5-Zi-AM3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -819,6 +830,6 @@ EEFydGlzdCBOYW1lA
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="s8u-Ea-xRV"/>
-        <segue reference="fSg-BF-tZs"/>
+        <segue reference="HND-XR-O8b"/>
     </inferredMetricsTieBreakers>
 </document>
