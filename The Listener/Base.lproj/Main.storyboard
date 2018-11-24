@@ -784,6 +784,14 @@ EEFydGlzdCBOYW1lA
                                 <rect key="frame" x="27" y="161" width="320" height="330"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PrV-4M-qgt">
+                                <rect key="frame" x="244" y="107" width="39" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="result"/>
+                                <connections>
+                                    <segue destination="fqn-Qo-ECb" kind="presentation" id="GmN-UI-KBT"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6U-0d-28S">
                                 <rect key="frame" x="155" y="507" width="65" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -811,6 +819,28 @@ EEFydGlzdCBOYW1lA
             </objects>
             <point key="canvasLocation" x="1464.8" y="644.52773613193403"/>
         </scene>
+        <!--Details-->
+        <scene sceneID="fwK-sM-S3o">
+            <objects>
+                <viewController id="a55-mR-sin" customClass="SongDetailsViewController" customModule="The_Listener" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Prc-H8-Iaw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="jza-Mm-w0o"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Details" id="sE9-oe-uw0">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="HnN-dU-bdV">
+                            <connections>
+                                <action selector="backMethod:" destination="a55-mR-sin" id="zg7-Ny-UgR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lt4-GI-6Da" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3300" y="644.52773613193403"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="1zk-tJ-mOK">
             <objects>
@@ -828,6 +858,24 @@ EEFydGlzdCBOYW1lA
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Htd-QY-JxJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-585" y="118"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yrZ-l8-U8D">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fqn-Qo-ECb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="88o-dX-Zc3">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="a55-mR-sin" kind="relationship" relationship="rootViewController" id="rLS-0A-Akm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ikb-OM-7lg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2360.8000000000002" y="644.52773613193403"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
