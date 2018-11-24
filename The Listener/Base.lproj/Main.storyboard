@@ -758,24 +758,39 @@ EEFydGlzdCBOYW1lA
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Scanner : Music recptor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4aY-LO-zxH">
-                                <rect key="frame" x="88" y="89" width="198" height="35"/>
+                                <rect key="frame" x="88" y="64" width="198" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8m-t2-kzn">
-                                <rect key="frame" x="241" y="305" width="36" height="30"/>
+                                <rect key="frame" x="169" y="107" width="36" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="PLAY"/>
                                 <connections>
                                     <action selector="playMethod:" destination="zNa-u1-Z0k" eventType="touchUpInside" id="mFh-QS-pQM"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6U-0d-28S">
-                                <rect key="frame" x="88" y="305" width="61" height="30"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Tips: Recorded song will be sent and analised on server for song identification." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="82k-er-siO">
+                                <rect key="frame" x="16" y="573" width="343" height="49.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="RECORD"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qjh-NF-8U9">
+                                <rect key="frame" x="27" y="161" width="320" height="330"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6U-0d-28S">
+                                <rect key="frame" x="155" y="507" width="65" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.35686274509999999" green="0.78039215689999997" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Record">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="recordingMethod:" destination="zNa-u1-Z0k" eventType="touchUpInside" id="zg1-YD-CeE"/>
                                 </connections>
@@ -789,44 +804,12 @@ EEFydGlzdCBOYW1lA
                     <connections>
                         <outlet property="playButton" destination="g8m-t2-kzn" id="aMq-0N-tWg"/>
                         <outlet property="recordButton" destination="I6U-0d-28S" id="YeY-m3-KYO"/>
+                        <outlet property="scanPanel" destination="qjh-NF-8U9" id="0tP-hs-WLf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oL8-yB-KJv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1466" y="645"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="nL3-Xf-tqC">
-            <objects>
-                <viewController id="bxQ-2U-RtU" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="tpj-M6-BMC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Song Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQt-sS-nfn">
-                                <rect key="frame" x="149" y="74" width="100" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="NI2-Zg-aML"/>
-                    </view>
-                    <toolbarItems>
-                        <barButtonItem title="Back" width="42" style="plain" id="v2r-HG-1dz">
-                            <connections>
-                                <segue destination="zNa-u1-Z0k" kind="show" id="HT3-uM-XDM"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem title="Keep Scaning" width="42" style="plain" id="kp8-QH-6O9"/>
-                    </toolbarItems>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="f6P-Wo-LBM" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2369" y="-119"/>
+            <point key="canvasLocation" x="1464.8" y="644.52773613193403"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1zk-tJ-mOK">
@@ -848,7 +831,6 @@ EEFydGlzdCBOYW1lA
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="s8u-Ea-xRV"/>
         <segue reference="6oX-Ft-axR"/>
     </inferredMetricsTieBreakers>
 </document>
