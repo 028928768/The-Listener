@@ -1,0 +1,6 @@
+framework module Pods_The_ListenerTests {
+  umbrella header "Pods-The ListenerTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

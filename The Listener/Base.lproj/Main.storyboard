@@ -803,6 +803,12 @@ EEFydGlzdCBOYW1lA
                                     <action selector="recordingMethod:" destination="zNa-u1-Z0k" eventType="touchUpInside" id="zg1-YD-CeE"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xBl-Y6-s9k">
+                                <rect key="frame" x="151" y="566" width="72" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Run Script"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Hph-rM-UCS"/>
@@ -826,6 +832,16 @@ EEFydGlzdCBOYW1lA
                     <view key="view" contentMode="scaleToFill" id="Prc-H8-Iaw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="result of the matching......" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Hb-qj-EeD">
+                                <rect key="frame" x="58" y="157" width="271" height="313"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="jza-Mm-w0o"/>
                     </view>
@@ -836,6 +852,9 @@ EEFydGlzdCBOYW1lA
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="resultTextView" destination="0Hb-qj-EeD" id="zJr-qM-ODB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lt4-GI-6Da" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

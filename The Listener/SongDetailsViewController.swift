@@ -9,11 +9,30 @@
 import UIKit
 
 class SongDetailsViewController: UIViewController {
+    
+    //MARK: Properties
+    
+    @IBOutlet weak var resultTextView: UITextView!
     let backgroundImage = UIImage(named: "detailBackGroundIMG")
     override func viewDidLoad() {
         super.viewDidLoad()
         //assignGraphic
         assignGraphic()
+        
+        //Read Match.out file from Local Server
+        let url = NSURL(string: "http://192.168.64.2/audfprint-master/Match.out")!
+        let request = NSURLRequest(url: url as URL)
+        NSURLConnection.sendAsynchronousRequest(request as URLRequest, queue: OperationQueue.current!) { (response, data, error) -> Void in
+            if error != nil {
+                print(error!)
+            } else {
+                if let textFile = NSString(data: data!, encoding: String.Encoding.utf8.rawValue) {
+                    //print(textFile)
+                    self.resultTextView.text = textFile as String
+                }
+            }
+        }
+
     }
     
     func assignGraphic (){

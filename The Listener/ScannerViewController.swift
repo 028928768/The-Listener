@@ -8,6 +8,9 @@
 
 import UIKit
 import AVFoundation
+import Alamofire
+
+
 
 class ScannerViewController: UIViewController,AVAudioPlayerDelegate {
     //MARK: Properties
@@ -34,13 +37,14 @@ class ScannerViewController: UIViewController,AVAudioPlayerDelegate {
         
         let fileManager = FileManager()
         let documentFolderUrl = try? fileManager.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
-        let fileURL = documentFolderUrl?.appendingPathComponent("Recording:m4a")
+        let fileURL = documentFolderUrl?.appendingPathComponent("Recording:mp3")
         let audioSetting = [AVFormatIDKey : kAudioFormatMPEG4AAC as NSNumber,AVSampleRateKey : 16000.0 as NSNumber, AVNumberOfChannelsKey: 1 as NSNumber, AVEncoderAudioQualityKey: AVAudioQuality.low.rawValue as NSNumber]
         do {
             audioRecorder = try AVAudioRecorder(url: fileURL!, settings: audioSetting)
         } catch {
             audioRecorder = nil
         }
+        //kAudioFormatMPEG4AAC
     }
     //Graphic
    func assignGraphic(){
@@ -110,9 +114,74 @@ class ScannerViewController: UIViewController,AVAudioPlayerDelegate {
             }
             else {
                 audioPlayer?.play()
+//                Alamofire.upload((audioRecorder?.url)!, to: "http://192.168.64.2/audfprint-master/InputSound/").responseJSON { response in
+//                    debugPrint(response)
+//                }
+                
+            
+//                Alamofire.upload(
+//                    multipartFormData: { multipartFormData in
+//                        multipartFormData.append((self.audioRecorder?.url)!, withName: "audio",mimeType: "audio/m4a")
+//                },
+//                    to: "http://192.168.64.2/audfprint-master/InputSound",
+//                    encodingCompletion: { encodingResult in
+//                        switch encodingResult {
+//                        case .success(let upload, _, _):
+//                            upload.responseJSON { response in
+//                                debugPrint(response)
+//                            }
+//                        case .failure(let encodingError):
+//                            print(encodingError)
+//                        }
+//                }
+//                )
+                
+                guard let audioData: Data =  try? Data(contentsOf: (audioRecorder?.url)!) else { return }
+                Alamofire.upload(
+                    multipartFormData: { multipartFormData in
+                        multipartFormData.append( audioData , withName: "Recording.mp3",mimeType: "audio/mpeg")
+                        //**this "withName:" is it the name of the file?
+                },
+                    to: "http://192.168.64.2/audfprint-master/InputSound",
+                    encodingCompletion: { encodingResult in
+                        switch encodingResult {
+                        case .success(let upload, _, _):
+                            upload.responseString { response in
+                                debugPrint(response)
+                            }
+                        case .failure(let encodingError):
+                            print(encodingError)
+                        }
+                }
+                )
+                
+               
             }
         }
     }
+    
+    @IBAction func MatcingMethod(_ sender: Any) {
+//        let url = NSURL(string: "http://192.168.64.2/audfprint-master/test.py")!
+//        let request = NSURLRequest(url: url as URL)
+//        NSURLConnection.sendAsynchronousRequest(request as URLRequest, queue: OperationQueue.current!) { (response, data, error) -> Void in
+//
+//        }
+        Alamofire.request("http://192.168.64.2/audfprint-master/test.py").responseJSON { response in
+            print("Request: \(String(describing: response.request))")   // original url request
+            print("Response: \(String(describing: response.response))") // http url response
+            print("Result: \(response.result)")                         // response serialization result
+            
+            if let json = response.result.value {
+                print("JSON: \(json)") // serialized json response
+            }
+            
+            if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
+                print("Data: \(utf8Text)") // original server data as UTF8 string
+            }
+        }
+      
+    }
+    
     
     /*
     // MARK: - Navigation
