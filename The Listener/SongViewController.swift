@@ -30,7 +30,6 @@ class SongViewController: UIViewController, UITableViewDelegate, UITableViewData
         //Fetches the appropriate song for the data source layout.
         let song = songs[indexPath.row]
         
-        
         cell.songNameLabel.text = song.name
         cell.artistSongLabel.text = song.artist
         cell.albumSongLabel.text = song.album
@@ -43,8 +42,18 @@ class SongViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         assignBackGround()
         loadSampleSongs()
+        resignFirstResponder()
+        
+        
+        //Bar button
+       // let searchImage = UIImage(named: "searchIMG")
+        let DiscoverButtonItem = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: nil)
+        //let DiscoverButtonItem = UIBarButtonItem(title: "Discover", style: .done, target: self, action: nil)
+        
+        self.navigationItem.rightBarButtonItem  = DiscoverButtonItem
         
     }
+    
     
 
     override func didReceiveMemoryWarning() {
@@ -63,19 +72,29 @@ class SongViewController: UIViewController, UITableViewDelegate, UITableViewData
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
-        if segue.identifier == "tabToPlay" {
-        let secondVC: SongPlayerViewController = segue.destination as! SongPlayerViewController
+        switch segue.identifier {
+        case "tabToPlay":
+            let secondVC: SongPlayerViewController = segue.destination as! SongPlayerViewController
             
             let selectedSongIndex = songTableView.indexPathForSelectedRow!.row
             secondVC.currentSongIndex = selectedSongIndex
-          //  secondVC.selectSongList = songs[songTableView.indexPathForSelectedRow!.row]
-         //   secondVC.selectSongList = songs[selectedSongIndex]
+            //  secondVC.selectSongList = songs[songTableView.indexPathForSelectedRow!.row]
+            //   secondVC.selectSongList = songs[selectedSongIndex]
             secondVC.SongLists = songs
-           
-            
-            
+        default:
+            break
+        }
         
-    }
+//        if segue.identifier == "tabToPlay" {
+//        let secondVC: SongPlayerViewController = segue.destination as! SongPlayerViewController
+//
+//            let selectedSongIndex = songTableView.indexPathForSelectedRow!.row
+//            secondVC.currentSongIndex = selectedSongIndex
+//          //  secondVC.selectSongList = songs[songTableView.indexPathForSelectedRow!.row]
+//         //   secondVC.selectSongList = songs[selectedSongIndex]
+//            secondVC.SongLists = songs
+//
+//    }
     
     }
         private func loadSampleSongs(){
