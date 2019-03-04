@@ -9,11 +9,15 @@
 import UIKit
 
 class HomeTableViewController: UITableViewController {
-
+    //MARK: Properties
+     var PopPlaylist = [Home]()
     override func viewDidLoad() {
         super.viewDidLoad()
-        assignBackGround()
+        loadPlayLists()
+       // assignBackGround()
         setNavigationBarTransparents()
+        
+       
         
     }
     
@@ -30,23 +34,31 @@ class HomeTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 2
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return PopPlaylist.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cellIdentifier = "playListCell"
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? HomeTableViewCell else {
+            fatalError("The dequeued cell is not an instance of HomeTableViewCell")
+        }
 
-        // Configure the cell...
+        let pop_playlist = PopPlaylist[indexPath.row]
+        //assign data to cell
+        cell.playListCoverView.image = pop_playlist.playListCover
+        cell.playListIconView.image = pop_playlist.playListIcon
+        cell.playListName.text = pop_playlist.playListName
+        cell.playListDescription.text = pop_playlist.playListDiscription
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -93,6 +105,41 @@ class HomeTableViewController: UITableViewController {
     }
     */
     
+    //MARK: Private Method
+    func loadPlayLists(){
+        //Assign Icon UIImages
+        let playListIcon = UIImage(named: "play-buttonIMG")
+        let playList1_cover = UIImage(named: "PopCoverIMG")
+        let playList2_cover = UIImage(named: "ReputationIMG")
+        let playList3_cover = UIImage(named: "GuitarIMG")
+        let playList4_cover = UIImage(named: "OriginalIMG")
+        let playList5_cover = UIImage(named: "JazzIMG")
+        let playList6_cover = UIImage(named: "CountryIMG")
+        let playList2Cover = UIImage(named: "FirstTime-Cover")
+        
+        guard let playList1 = Home(playListName: "Pop Musics", playListCover: playList1_cover, playListDiscription: "pop big hits music compilations", playListIcon: playListIcon) else {
+            fatalError("Playlist 1 error!!")
+        }
+        
+        guard let playList2 = Home(playListName: "Reputation", playListCover: playList2_cover, playListDiscription: "Taylor Swift - latest album is out!", playListIcon: playListIcon) else {
+            fatalError("Playlist 2 error!!")
+        }
+        guard let playList3 = Home(playListName: "Peaceful Guitar", playListCover: playList3_cover, playListDiscription: "Study and Relax Guitar Instrument", playListIcon: playListIcon) else {
+            fatalError("Playlist 3 error!!")
+        }
+        guard let playList4 = Home(playListName: "Original Soundtrack", playListCover: playList4_cover, playListDiscription: "Korean drama ost - The Liar and his lovers", playListIcon: playListIcon) else {
+            fatalError("Playlist 4 error!!")
+        }
+        guard let playList5 = Home(playListName: "Jazz Latenight", playListCover: playList5_cover, playListDiscription: "Enjoy listening jazz music", playListIcon: playListIcon) else {
+            fatalError("Playlist 5 error!!")
+        }
+        guard let playList6 = Home(playListName: "Country Songs", playListCover: playList6_cover, playListDiscription: "Listen to peaceful and relaxing country musics", playListIcon: playListIcon) else {
+            fatalError("Playlist 6 error!!")
+        }
+        
+        PopPlaylist += [playList1,playList2,playList3,playList4,playList5,playList6]
+        
+    }
     //MARK: Graphics
     func assignBackGround(){
         let background = UIImage(named: "homeWallpaperIMG")
@@ -109,5 +156,7 @@ class HomeTableViewController: UITableViewController {
         navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.navigationBar.isTranslucent = false
     }
+    
+    
 
 }

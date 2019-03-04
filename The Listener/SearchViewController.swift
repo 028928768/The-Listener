@@ -14,7 +14,11 @@ class SearchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        assignBackGround()
         
+    }
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
     //MARK: Actions
     @IBAction func cancelButton(_ sender: UIButton) {
@@ -32,5 +36,15 @@ class SearchViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    func assignBackGround(){
+        let background = UIImage(named: "StorageBGIMG")
+        var imageView = UIImageView(frame: view.bounds)
+        imageView.contentMode = UIViewContentMode.scaleAspectFill
+        imageView.clipsToBounds = true
+        imageView.image = background
+        imageView.center = view.center
+        view.addSubview(imageView)
+        self.view.sendSubview(toBack: imageView)
+    }
 
 }

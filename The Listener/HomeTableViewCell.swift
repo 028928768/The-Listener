@@ -9,7 +9,12 @@
 import UIKit
 
 class HomeTableViewCell: UITableViewCell {
-
+    //MARK: properties
+    @IBOutlet weak var playListCoverView: UIImageView!
+    @IBOutlet weak var playListIconView: UIImageView!
+    @IBOutlet weak var playListName: UILabel!
+    @IBOutlet weak var playListDescription: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -13,6 +13,7 @@
 		154A6FFB21A9479B005B553F /* SongDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154A6FFA21A9479A005B553F /* SongDetailsViewController.swift */; };
 		157F3E47222D1F0D006A9B2C /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F3E46222D1F0D006A9B2C /* HomeTableViewController.swift */; };
 		157F3E49222D2B81006A9B2C /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F3E48222D2B81006A9B2C /* HomeTableViewCell.swift */; };
+		157F3E4B222D3063006A9B2C /* HomeCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F3E4A222D3063006A9B2C /* HomeCollection.swift */; };
 		159FEE2B2181D10B005B0683 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159FEE2A2181D10B005B0683 /* LoginViewController.swift */; };
 		159FEE3521821280005B0683 /* ForgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159FEE3421821280005B0683 /* ForgetViewController.swift */; };
 		15CA1D7621836FB60040163F /* ResendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CA1D7521836FB50040163F /* ResendViewController.swift */; };
@@ -62,6 +63,7 @@
 		154A6FFA21A9479A005B553F /* SongDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetailsViewController.swift; sourceTree = "<group>"; };
 		157F3E46222D1F0D006A9B2C /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		157F3E48222D2B81006A9B2C /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		157F3E4A222D3063006A9B2C /* HomeCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollection.swift; sourceTree = "<group>"; };
 		159FEE2A2181D10B005B0683 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		159FEE3421821280005B0683 /* ForgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetViewController.swift; sourceTree = "<group>"; };
 		15CA1D7521836FB50040163F /* ResendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResendViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +131,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		157F3E4C222D3072006A9B2C /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				157F3E4A222D3063006A9B2C /* HomeCollection.swift */,
+				612840642157D787006E9A99 /* Song.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
 		610B793C2144E86500AEEC0C = {
 			isa = PBXGroup;
 			children = (
@@ -168,7 +179,7 @@
 				15CA1D7521836FB50040163F /* ResendViewController.swift */,
 				159FEE3421821280005B0683 /* ForgetViewController.swift */,
 				159FEE2A2181D10B005B0683 /* LoginViewController.swift */,
-				612840642157D787006E9A99 /* Song.swift */,
+				157F3E4C222D3072006A9B2C /* Data Model */,
 				612840662157EB11006E9A99 /* SongViewController.swift */,
 				615688812165E4480096C94F /* SongPlayerViewController.swift */,
 				610B79522144E86500AEEC0C /* Assets.xcassets */,
@@ -494,6 +505,7 @@
 				15CA1D7621836FB60040163F /* ResendViewController.swift in Sources */,
 				612840672157EB11006E9A99 /* SongViewController.swift in Sources */,
 				157F3E49222D2B81006A9B2C /* HomeTableViewCell.swift in Sources */,
+				157F3E4B222D3063006A9B2C /* HomeCollection.swift in Sources */,
 				159FEE3521821280005B0683 /* ForgetViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
