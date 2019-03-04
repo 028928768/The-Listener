@@ -216,7 +216,6 @@ class SongPlayerViewController: UIViewController,AVAudioPlayerDelegate {
     
     @objc func updateSliderAndTime() {
         Slider.value = Float(audioPlayer.currentTime)
-        NSLog("Hi")
         
         currentTime.text = FormatTimePlay(Duration: Int(audioPlayer.currentTime))
         let timeLeft = Int(audioPlayer.duration) - Int(audioPlayer.currentTime)

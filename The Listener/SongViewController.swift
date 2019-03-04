@@ -47,7 +47,7 @@ class SongViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         //Bar button
        // let searchImage = UIImage(named: "searchIMG")
-        let DiscoverButtonItem = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: nil)
+        let DiscoverButtonItem = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: #selector(PerformDiscoverySongSegue))
         //let DiscoverButtonItem = UIBarButtonItem(title: "Discover", style: .done, target: self, action: nil)
         
         self.navigationItem.rightBarButtonItem  = DiscoverButtonItem
@@ -81,6 +81,8 @@ class SongViewController: UIViewController, UITableViewDelegate, UITableViewData
             //  secondVC.selectSongList = songs[songTableView.indexPathForSelectedRow!.row]
             //   secondVC.selectSongList = songs[selectedSongIndex]
             secondVC.SongLists = songs
+        case "searchSongs":
+            print("Discovery!")
         default:
             break
         }
@@ -126,6 +128,10 @@ class SongViewController: UIViewController, UITableViewDelegate, UITableViewData
         imageView.center = view.center
         view.addSubview(imageView)
         self.view.sendSubview(toBack: imageView)
+    }
+    
+    @objc func PerformDiscoverySongSegue(){
+        self.performSegue(withIdentifier: "searchSongs", sender: self)
     }
 }
 

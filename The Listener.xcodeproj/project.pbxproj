@@ -15,6 +15,8 @@
 		159FEE3521821280005B0683 /* ForgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159FEE3421821280005B0683 /* ForgetViewController.swift */; };
 		15CA1D7621836FB60040163F /* ResendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CA1D7521836FB50040163F /* ResendViewController.swift */; };
 		15CA1D78218386C00040163F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CA1D77218386C00040163F /* RegisterViewController.swift */; };
+		15EA21E6222BD46E00692538 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EA21E5222BD46E00692538 /* SearchViewController.swift */; };
+		15EA21E8222BF3BC00692538 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EA21E7222BF3BC00692538 /* SearchTableViewController.swift */; };
 		610A49AA2166882300C22EA4 /* Dark Horse.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 610A49A92166882300C22EA4 /* Dark Horse.mp3 */; };
 		610B79492144E86500AEEC0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610B79482144E86500AEEC0C /* AppDelegate.swift */; };
 		610B794B2144E86500AEEC0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610B794A2144E86500AEEC0C /* ViewController.swift */; };
@@ -60,6 +62,8 @@
 		159FEE3421821280005B0683 /* ForgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetViewController.swift; sourceTree = "<group>"; };
 		15CA1D7521836FB50040163F /* ResendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResendViewController.swift; sourceTree = "<group>"; };
 		15CA1D77218386C00040163F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		15EA21E5222BD46E00692538 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		15EA21E7222BF3BC00692538 /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		1E414369C16370F509036B20 /* Pods-The ListenerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The ListenerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-The ListenerTests/Pods-The ListenerTests.release.xcconfig"; sourceTree = "<group>"; };
 		21907FF2E9C2E6507BA1890B /* Pods-The Listener.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Listener.release.xcconfig"; path = "Pods/Target Support Files/Pods-The Listener/Pods-The Listener.release.xcconfig"; sourceTree = "<group>"; };
 		5C294BB309707683BC74020F /* Pods_The_Listener.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Listener.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,6 +154,8 @@
 				610B794A2144E86500AEEC0C /* ViewController.swift */,
 				612840602157C945006E9A99 /* SongTableViewCell.swift */,
 				610B794C2144E86500AEEC0C /* Main.storyboard */,
+				15EA21E7222BF3BC00692538 /* SearchTableViewController.swift */,
+				15EA21E5222BD46E00692538 /* SearchViewController.swift */,
 				154A6FFA21A9479A005B553F /* SongDetailsViewController.swift */,
 				154A6FF821A7F988005B553F /* ScannerViewController.swift */,
 				15CA1D77218386C00040163F /* RegisterViewController.swift */,
@@ -473,7 +479,9 @@
 				610B794B2144E86500AEEC0C /* ViewController.swift in Sources */,
 				610B79492144E86500AEEC0C /* AppDelegate.swift in Sources */,
 				159FEE2B2181D10B005B0683 /* LoginViewController.swift in Sources */,
+				15EA21E8222BF3BC00692538 /* SearchTableViewController.swift in Sources */,
 				615688822165E4480096C94F /* SongPlayerViewController.swift in Sources */,
+				15EA21E6222BD46E00692538 /* SearchViewController.swift in Sources */,
 				154A6FF921A7F988005B553F /* ScannerViewController.swift in Sources */,
 				610B79512144E86500AEEC0C /* The_Listener.xcdatamodeld in Sources */,
 				15CA1D7621836FB60040163F /* ResendViewController.swift in Sources */,
