@@ -11,13 +11,19 @@ import UIKit
 class HomeTableViewController: UITableViewController {
     //MARK: Properties
      var PopPlaylist = [Home]()
+    
+    @IBOutlet weak var sideMenuButton: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         loadPlayLists()
-       // assignBackGround()
         setNavigationBarTransparents()
         
-       
+       //sidemenu target
+        sideMenuButton.target = self.revealViewController()
+        sideMenuButton.action = #selector(SWRevealViewController.revealToggle(_:))
+      //Gesture Pan
+        self.view.addGestureRecognizer((self.revealViewController()?.panGestureRecognizer())!)
         
     }
     
@@ -156,6 +162,15 @@ class HomeTableViewController: UITableViewController {
         navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.navigationBar.isTranslucent = false
     }
+//    @objc func handleMenuToggle(){
+//        print("Toggle Menu")
+//    }
+    
+    //MARK: Side Menu
+//    func configureNavigationBar(){
+//        let menuIcon = UIImage(named: "menuIMG")
+//        navigationItem.leftBarButtonItem = UIBarButtonItem(image: menuIcon?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(handleMenuToggle))
+//    }
     
     
 

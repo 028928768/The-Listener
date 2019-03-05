@@ -14,6 +14,8 @@
 		157F3E47222D1F0D006A9B2C /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F3E46222D1F0D006A9B2C /* HomeTableViewController.swift */; };
 		157F3E49222D2B81006A9B2C /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F3E48222D2B81006A9B2C /* HomeTableViewCell.swift */; };
 		157F3E4B222D3063006A9B2C /* HomeCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F3E4A222D3063006A9B2C /* HomeCollection.swift */; };
+		157F3E63222EF6BC006A9B2C /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 157F3E61222EF6BB006A9B2C /* SWRevealViewController.m */; };
+		157F3E8C222F021C006A9B2C /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F3E8B222F021C006A9B2C /* MenuTableViewController.swift */; };
 		159FEE2B2181D10B005B0683 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159FEE2A2181D10B005B0683 /* LoginViewController.swift */; };
 		159FEE3521821280005B0683 /* ForgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159FEE3421821280005B0683 /* ForgetViewController.swift */; };
 		15CA1D7621836FB60040163F /* ResendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CA1D7521836FB50040163F /* ResendViewController.swift */; };
@@ -64,6 +66,10 @@
 		157F3E46222D1F0D006A9B2C /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		157F3E48222D2B81006A9B2C /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		157F3E4A222D3063006A9B2C /* HomeCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollection.swift; sourceTree = "<group>"; };
+		157F3E60222EF6BB006A9B2C /* The Listener-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "The Listener-Bridging-Header.h"; sourceTree = "<group>"; };
+		157F3E61222EF6BB006A9B2C /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		157F3E62222EF6BC006A9B2C /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		157F3E8B222F021C006A9B2C /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		159FEE2A2181D10B005B0683 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		159FEE3421821280005B0683 /* ForgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetViewController.swift; sourceTree = "<group>"; };
 		15CA1D7521836FB50040163F /* ResendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResendViewController.swift; sourceTree = "<group>"; };
@@ -140,6 +146,24 @@
 			path = "Data Model";
 			sourceTree = "<group>";
 		};
+		157F3E57222ED6D4006A9B2C /* Side Menu */ = {
+			isa = PBXGroup;
+			children = (
+				157F3E46222D1F0D006A9B2C /* HomeTableViewController.swift */,
+				157F3E8B222F021C006A9B2C /* MenuTableViewController.swift */,
+			);
+			path = "Side Menu";
+			sourceTree = "<group>";
+		};
+		157F3E5F222EF675006A9B2C /* swReveal */ = {
+			isa = PBXGroup;
+			children = (
+				157F3E62222EF6BC006A9B2C /* SWRevealViewController.h */,
+				157F3E61222EF6BB006A9B2C /* SWRevealViewController.m */,
+			);
+			path = swReveal;
+			sourceTree = "<group>";
+		};
 		610B793C2144E86500AEEC0C = {
 			isa = PBXGroup;
 			children = (
@@ -169,7 +193,6 @@
 				610B794A2144E86500AEEC0C /* ViewController.swift */,
 				612840602157C945006E9A99 /* SongTableViewCell.swift */,
 				610B794C2144E86500AEEC0C /* Main.storyboard */,
-				157F3E46222D1F0D006A9B2C /* HomeTableViewController.swift */,
 				157F3E48222D2B81006A9B2C /* HomeTableViewCell.swift */,
 				15EA21E7222BF3BC00692538 /* SearchTableViewController.swift */,
 				15EA21E5222BD46E00692538 /* SearchViewController.swift */,
@@ -179,13 +202,16 @@
 				15CA1D7521836FB50040163F /* ResendViewController.swift */,
 				159FEE3421821280005B0683 /* ForgetViewController.swift */,
 				159FEE2A2181D10B005B0683 /* LoginViewController.swift */,
+				157F3E57222ED6D4006A9B2C /* Side Menu */,
 				157F3E4C222D3072006A9B2C /* Data Model */,
-				612840662157EB11006E9A99 /* SongViewController.swift */,
+				157F3E5F222EF675006A9B2C /* swReveal */,
 				615688812165E4480096C94F /* SongPlayerViewController.swift */,
+				612840662157EB11006E9A99 /* SongViewController.swift */,
 				610B79522144E86500AEEC0C /* Assets.xcassets */,
 				610B79542144E86500AEEC0C /* LaunchScreen.storyboard */,
 				610B79572144E86500AEEC0C /* Info.plist */,
 				151B453C21983E0F00289C59 /* GoogleService-Info.plist */,
+				157F3E60222EF6BB006A9B2C /* The Listener-Bridging-Header.h */,
 				610B794F2144E86500AEEC0C /* The_Listener.xcdatamodeld */,
 				61658A7321627B0600B5D46E /* Songs */,
 			);
@@ -316,6 +342,7 @@
 				TargetAttributes = {
 					610B79442144E86500AEEC0C = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -490,6 +517,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				154A6FFB21A9479B005B553F /* SongDetailsViewController.swift in Sources */,
+				157F3E63222EF6BC006A9B2C /* SWRevealViewController.m in Sources */,
 				612840652157D787006E9A99 /* Song.swift in Sources */,
 				15CA1D78218386C00040163F /* RegisterViewController.swift in Sources */,
 				612840612157C945006E9A99 /* SongTableViewCell.swift in Sources */,
@@ -500,6 +528,7 @@
 				157F3E47222D1F0D006A9B2C /* HomeTableViewController.swift in Sources */,
 				615688822165E4480096C94F /* SongPlayerViewController.swift in Sources */,
 				15EA21E6222BD46E00692538 /* SearchViewController.swift in Sources */,
+				157F3E8C222F021C006A9B2C /* MenuTableViewController.swift in Sources */,
 				154A6FF921A7F988005B553F /* ScannerViewController.swift in Sources */,
 				610B79512144E86500AEEC0C /* The_Listener.xcdatamodeld in Sources */,
 				15CA1D7621836FB60040163F /* ResendViewController.swift in Sources */,
@@ -673,11 +702,14 @@
 			baseConfigurationReference = CEE74C2039D869B88E7C23CD /* Pods-The Listener.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "The Listener/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Mfireball.The-Listener";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "The Listener/The Listener-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -688,11 +720,13 @@
 			baseConfigurationReference = 21907FF2E9C2E6507BA1890B /* Pods-The Listener.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "The Listener/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Mfireball.The-Listener";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "The Listener/The Listener-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
