@@ -11,11 +11,12 @@ import UIKit
 class MenuTableViewController: UITableViewController {
     //MARK: Properties
     var CommandArray = [String]()
+    var SelectedIndex = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        CommandArray = ["Hello","Second","World"]
+        //assignBackGround()
+        CommandArray = ["Main","Profile","Discover","Storage","Scanner","Sign-out"]
     }
 
     // MARK: - Table view data source
@@ -35,10 +36,34 @@ class MenuTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "menuCell", for: indexPath) as UITableViewCell
 
         cell.textLabel?.text = CommandArray[indexPath.row]
+        cell.textLabel?.textColor = UIColor.white
 
         return cell
     }
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        SelectedIndex = indexPath.row
+        switch SelectedIndex {
+        case 0:
+            print("Main")
+        case 1:
+            performSegue(withIdentifier: "Profile-segue", sender: self)
+        case 2:
+            performSegue(withIdentifier: "Discover-segue", sender: self)
+        case 3:
+            performSegue(withIdentifier: "Storage-segue", sender: self)
+        case 4:
+            performSegue(withIdentifier: "Scanner-segue", sender: self)
+        case 5:
+            performSegue(withIdentifier: "Signout-segue", sender: self)
+        default:
+            print("no selected cell.")
+        }
+        
+    }
 
     /*
     // Override to support conditional editing of the table view.
@@ -84,5 +109,17 @@ class MenuTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    //MARK: Graphics
+    func assignBackGround(){
+        let background = UIImage(named: "StorageBGIMG")
+        var imageView = UIImageView(frame: view.bounds)
+        imageView.contentMode = UIViewContentMode.scaleAspectFill
+        imageView.clipsToBounds = true
+        imageView.image = background
+        imageView.center = view.center
+        view.addSubview(imageView)
+        self.view.sendSubview(toBack: imageView)
+    }
 
 }
