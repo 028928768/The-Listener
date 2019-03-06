@@ -83,6 +83,9 @@ class ScannerViewController: UIViewController,AVAudioPlayerDelegate {
         )
     }
     //Actions
+    @IBAction func BackToMain(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
     
     @IBAction func recordingMethod(_ sender: Any) {
         if audioRecorder!.isRecording {

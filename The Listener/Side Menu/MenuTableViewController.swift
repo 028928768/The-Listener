@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class MenuTableViewController: UITableViewController {
     //MARK: Properties
@@ -48,17 +49,43 @@ class MenuTableViewController: UITableViewController {
         SelectedIndex = indexPath.row
         switch SelectedIndex {
         case 0:
-            print("Main")
+          // Main
+          //  dismiss(animated: true, completion: nil)
+          //  self.performSegue(withIdentifier: "menuCell", sender: self)
+           #selector(SWRevealViewController.revealToggle(_:))
+            
         case 1:
-            performSegue(withIdentifier: "Profile-segue", sender: self)
+            //Profile
+            dismiss(animated: true, completion: nil)
+            self.performSegue(withIdentifier: "profileSegue", sender: self)
+            
         case 2:
-            performSegue(withIdentifier: "Discover-segue", sender: self)
+            //Search
+            dismiss(animated: true, completion: nil)
+            performSegue(withIdentifier: "discoverSegue", sender: self)
         case 3:
-            performSegue(withIdentifier: "Storage-segue", sender: self)
+            //Storage
+            dismiss(animated: true, completion: nil)
+            performSegue(withIdentifier: "storageSegue", sender: self)
         case 4:
-            performSegue(withIdentifier: "Scanner-segue", sender: self)
+            //Scanner
+            dismiss(animated: true, completion: nil)
+            performSegue(withIdentifier: "scannerSegue", sender: self)
         case 5:
-            performSegue(withIdentifier: "Signout-segue", sender: self)
+            //Sign-out
+            dismiss(animated: true, completion: nil)
+           // performSegue(withIdentifier: "signoutSegue", sender: self)
+//            let SignoutAction = UIAlertAction(title: "Sign Out!", style: .destructive) { (SignoutAction) in
+            var Alert: UIAlertView = UIAlertView(title: "Sign Out", message: "Sign out from The Listener", delegate: self, cancelButtonTitle: "OK")
+                Alert.show()
+                do {
+                    try Auth.auth().signOut()
+                    print("Signed Out")
+                    self.performSegue(withIdentifier: "signoutSegue", sender: self)
+                } catch let err {
+                    print("Signout Error!")
+                }
+            
         default:
             print("no selected cell.")
         }

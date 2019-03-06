@@ -25,6 +25,9 @@ class RegisterViewController: UIViewController {
     }
     
     //MARK Actions:
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     
     func assignBackGround() {
         let background = UIImage(named: "RegisterBackGroundIMG")

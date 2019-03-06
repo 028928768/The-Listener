@@ -54,6 +54,9 @@ class SongViewController: UIViewController, UITableViewDelegate, UITableViewData
         
     }
     
+    @IBAction func backToMainButton(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
     
 
     override func didReceiveMemoryWarning() {
