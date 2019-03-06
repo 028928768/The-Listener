@@ -34,6 +34,10 @@ class ScannerViewController: UIViewController,AVAudioPlayerDelegate {
          customGreen = hexStringToUIColor(hex: "#5BC78F")
          customRed = hexStringToUIColor(hex: "#FF473A")
         
+        let nav = self.navigationController?.navigationBar
+        nav?.barStyle = UIBarStyle.blackTranslucent
+        nav?.tintColor = UIColor.white
+        
         
         let fileManager = FileManager()
         let documentFolderUrl = try? fileManager.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
@@ -46,6 +50,14 @@ class ScannerViewController: UIViewController,AVAudioPlayerDelegate {
         }
         //kAudioFormatMPEG4AAC
     }
+    
+//    override func viewDidAppear(_ animated: Bool) {
+//        //1
+//        let nav = self.navigationController?.navigationBar
+//        nav?.barStyle = UIBarStyle.blackTranslucent
+//        nav?.tintColor = UIColor.white
+//
+//    }
     //Graphic
    func assignGraphic(){
     let background = backgroundImage

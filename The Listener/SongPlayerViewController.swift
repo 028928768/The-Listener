@@ -52,6 +52,7 @@ class SongPlayerViewController: UIViewController,AVAudioPlayerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       // setNavigationBarTransparents()
         
         //MARK: Graphics
         assignBackGround()
@@ -65,6 +66,18 @@ class SongPlayerViewController: UIViewController,AVAudioPlayerDelegate {
         
         
      
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        //1
+        let nav = self.navigationController?.navigationBar
+        nav?.barStyle = UIBarStyle.blackTranslucent
+        nav?.tintColor = UIColor.white
+        
+    }
+    func setNavigationBarTransparents(){
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.isTranslucent = false
     }
     func playCurrentSong() {
         

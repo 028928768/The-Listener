@@ -594,7 +594,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="lOs-v3-xqH"/>
                     </view>
-                    <navigationItem key="navigationItem" id="K2I-Nm-Cy8">
+                    <navigationItem key="navigationItem" title="Storage" id="K2I-Nm-Cy8">
                         <barButtonItem key="leftBarButtonItem" systemItem="reply" id="2E1-LW-3GM">
                             <connections>
                                 <action selector="backToMainButton:" destination="3TB-xE-GUO" id="wcr-H2-mnQ"/>
@@ -933,8 +933,8 @@ EEFydGlzdCBOYW1lA
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Scanner" id="5g0-GE-rHy">
-                        <barButtonItem key="leftBarButtonItem" systemItem="rewind" id="ESN-ac-gVF">
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="ESN-ac-gVF">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="BackToMain:" destination="zNa-u1-Z0k" id="8Fq-Jx-K4m"/>
                             </connections>
@@ -1266,7 +1266,7 @@ EEFydGlzdCBOYW1lA
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="fJH-GH-bjS"/>
-        <segue reference="AQV-wD-5cZ"/>
+        <segue reference="9Ke-DP-g9U"/>
         <segue reference="skc-zn-Q4u"/>
     </inferredMetricsTieBreakers>
 </document>

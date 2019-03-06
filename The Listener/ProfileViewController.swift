@@ -14,6 +14,9 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         assignBackGround()
 
+        let nav = self.navigationController?.navigationBar
+        nav?.barStyle = UIBarStyle.blackTranslucent
+        nav?.tintColor = UIColor.white
         
     }
     

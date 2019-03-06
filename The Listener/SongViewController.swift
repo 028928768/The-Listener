@@ -44,6 +44,9 @@ class SongViewController: UIViewController, UITableViewDelegate, UITableViewData
         loadSampleSongs()
         resignFirstResponder()
         
+        let nav = self.navigationController?.navigationBar
+        nav?.barStyle = UIBarStyle.blackTranslucent
+        nav?.tintColor = UIColor.white
         
         //Bar button
        // let searchImage = UIImage(named: "searchIMG")
@@ -53,6 +56,8 @@ class SongViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.navigationItem.rightBarButtonItem  = DiscoverButtonItem
         
     }
+    
+   
     
     @IBAction func backToMainButton(_ sender: UIBarButtonItem) {
         dismiss(animated: true, completion: nil)

@@ -27,13 +27,18 @@ class HomeTableViewController: UITableViewController {
         
     }
     
+    //Top bar setting
     override func viewDidAppear(_ animated: Bool) {
         //1
         let nav = self.navigationController?.navigationBar
         nav?.barStyle = UIBarStyle.blackTranslucent
         nav?.tintColor = UIColor.white
-//        self.navigationController?.navigationBar.isTranslucent = true
-//        self.navigationController?.view.backgroundColor = .clear
+
+    }
+    func setNavigationBarTransparents(){
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.isTranslucent = false
     }
 
     // MARK: - Table view data source
@@ -157,11 +162,7 @@ class HomeTableViewController: UITableViewController {
         view.addSubview(imageView)
         self.view.sendSubview(toBack: imageView)
     }
-    func setNavigationBarTransparents(){
-        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
-        navigationController?.navigationBar.shadowImage = UIImage()
-        navigationController?.navigationBar.isTranslucent = false
-    }
+    
 //    @objc func handleMenuToggle(){
 //        print("Toggle Menu")
 //    }
