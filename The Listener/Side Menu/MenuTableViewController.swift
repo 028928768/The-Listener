@@ -56,24 +56,24 @@ class MenuTableViewController: UITableViewController {
             
         case 1:
             //Profile
-            dismiss(animated: true, completion: nil)
+            //dismiss(animated: true, completion: nil)
             self.performSegue(withIdentifier: "profileSegue", sender: self)
             
         case 2:
             //Search
-            dismiss(animated: true, completion: nil)
+            // dismiss(animated: true, completion: nil)
             performSegue(withIdentifier: "discoverSegue", sender: self)
         case 3:
             //Storage
-            dismiss(animated: true, completion: nil)
+            //dismiss(animated: true, completion: nil)
             performSegue(withIdentifier: "storageSegue", sender: self)
         case 4:
             //Scanner
-            dismiss(animated: true, completion: nil)
+            //dismiss(animated: true, completion: nil)
             performSegue(withIdentifier: "scannerSegue", sender: self)
         case 5:
             //Sign-out
-            dismiss(animated: true, completion: nil)
+            //dismiss(animated: true, completion: nil)
            // performSegue(withIdentifier: "signoutSegue", sender: self)
 //            let SignoutAction = UIAlertAction(title: "Sign Out!", style: .destructive) { (SignoutAction) in
             var Alert: UIAlertView = UIAlertView(title: "Sign Out", message: "Sign out from The Listener", delegate: self, cancelButtonTitle: "OK")

@@ -18,6 +18,7 @@
 		157F3E8C222F021C006A9B2C /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F3E8B222F021C006A9B2C /* MenuTableViewController.swift */; };
 		157F3E8E222F7D7D006A9B2C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F3E8D222F7D7D006A9B2C /* ProfileViewController.swift */; };
 		157F3E90222F7D8F006A9B2C /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F3E8F222F7D8F006A9B2C /* EditProfileViewController.swift */; };
+		157F3E92222FAD57006A9B2C /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F3E91222FAD57006A9B2C /* PlaylistViewController.swift */; };
 		159FEE2B2181D10B005B0683 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159FEE2A2181D10B005B0683 /* LoginViewController.swift */; };
 		159FEE3521821280005B0683 /* ForgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159FEE3421821280005B0683 /* ForgetViewController.swift */; };
 		15CA1D7621836FB60040163F /* ResendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CA1D7521836FB50040163F /* ResendViewController.swift */; };
@@ -74,6 +75,7 @@
 		157F3E8B222F021C006A9B2C /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		157F3E8D222F7D7D006A9B2C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		157F3E8F222F7D8F006A9B2C /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		157F3E91222FAD57006A9B2C /* PlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
 		159FEE2A2181D10B005B0683 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		159FEE3421821280005B0683 /* ForgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetViewController.swift; sourceTree = "<group>"; };
 		15CA1D7521836FB50040163F /* ResendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResendViewController.swift; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 				610B794A2144E86500AEEC0C /* ViewController.swift */,
 				612840602157C945006E9A99 /* SongTableViewCell.swift */,
 				610B794C2144E86500AEEC0C /* Main.storyboard */,
+				157F3E91222FAD57006A9B2C /* PlaylistViewController.swift */,
 				157F3E8D222F7D7D006A9B2C /* ProfileViewController.swift */,
 				157F3E8F222F7D8F006A9B2C /* EditProfileViewController.swift */,
 				157F3E48222D2B81006A9B2C /* HomeTableViewCell.swift */,
@@ -526,6 +529,7 @@
 				154A6FFB21A9479B005B553F /* SongDetailsViewController.swift in Sources */,
 				157F3E63222EF6BC006A9B2C /* SWRevealViewController.m in Sources */,
 				612840652157D787006E9A99 /* Song.swift in Sources */,
+				157F3E92222FAD57006A9B2C /* PlaylistViewController.swift in Sources */,
 				15CA1D78218386C00040163F /* RegisterViewController.swift in Sources */,
 				612840612157C945006E9A99 /* SongTableViewCell.swift in Sources */,
 				610B794B2144E86500AEEC0C /* ViewController.swift in Sources */,
