@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		13ACA3B7870CEDD099B7504D /* Pods_The_ListenerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91512F8CE34368F277CD5EDE /* Pods_The_ListenerTests.framework */; };
+		150AF53A227E9A5300563B34 /* libACRCloud_IOS_SDK.unknown in Frameworks */ = {isa = PBXBuildFile; fileRef = 150AF536227E9A5300563B34 /* libACRCloud_IOS_SDK.unknown */; };
+		150AF53B227E9A5300563B34 /* libACRCloud_IOS_SDK.arm in Frameworks */ = {isa = PBXBuildFile; fileRef = 150AF537227E9A5300563B34 /* libACRCloud_IOS_SDK.arm */; };
+		150AF53C227E9A5300563B34 /* libACRCloud_IOS_SDK.86 in Frameworks */ = {isa = PBXBuildFile; fileRef = 150AF538227E9A5300563B34 /* libACRCloud_IOS_SDK.86 */; };
+		150AF53D227E9A5300563B34 /* libACRCloud_IOS_SDK.x64 in Frameworks */ = {isa = PBXBuildFile; fileRef = 150AF539227E9A5300563B34 /* libACRCloud_IOS_SDK.x64 */; };
+		150AF53E227E9A7100563B34 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 150AF52E227E997100563B34 /* Security.framework */; };
+		150AF53F227E9A7A00563B34 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 150AF530227E997F00563B34 /* libc++.tbd */; };
+		150AF540227E9A8700563B34 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 150AF532227E998900563B34 /* AVFoundation.framework */; };
+		150AF541227E9A8E00563B34 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 150AF534227E999400563B34 /* AudioToolbox.framework */; };
 		151B453D21983E0F00289C59 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 151B453C21983E0F00289C59 /* GoogleService-Info.plist */; };
 		154A6FF921A7F988005B553F /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154A6FF821A7F988005B553F /* ScannerViewController.swift */; };
 		154A6FFB21A9479B005B553F /* SongDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154A6FFA21A9479A005B553F /* SongDetailsViewController.swift */; };
@@ -63,6 +71,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		150AF52A227E995A00563B34 /* ACRCloudConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACRCloudConfig.h; sourceTree = "<group>"; };
+		150AF52B227E995A00563B34 /* ACRCloudRecognition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACRCloudRecognition.h; sourceTree = "<group>"; };
+		150AF52E227E997100563B34 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		150AF530227E997F00563B34 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		150AF532227E998900563B34 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		150AF534227E999400563B34 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		150AF536227E9A5300563B34 /* libACRCloud_IOS_SDK.unknown */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libACRCloud_IOS_SDK.unknown; path = ../ACRCloudDemo/libACRCloud_IOS_SDK/libACRCloud_IOS_SDK.unknown; sourceTree = "<group>"; };
+		150AF537227E9A5300563B34 /* libACRCloud_IOS_SDK.arm */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libACRCloud_IOS_SDK.arm; path = ../ACRCloudDemo/libACRCloud_IOS_SDK/libACRCloud_IOS_SDK.arm; sourceTree = "<group>"; };
+		150AF538227E9A5300563B34 /* libACRCloud_IOS_SDK.86 */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libACRCloud_IOS_SDK.86; path = ../ACRCloudDemo/libACRCloud_IOS_SDK/libACRCloud_IOS_SDK.86; sourceTree = "<group>"; };
+		150AF539227E9A5300563B34 /* libACRCloud_IOS_SDK.x64 */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libACRCloud_IOS_SDK.x64; path = ../ACRCloudDemo/libACRCloud_IOS_SDK/libACRCloud_IOS_SDK.x64; sourceTree = "<group>"; };
 		151B453C21983E0F00289C59 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		154A6FF821A7F988005B553F /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		154A6FFA21A9479A005B553F /* SongDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetailsViewController.swift; sourceTree = "<group>"; };
@@ -120,7 +138,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				150AF541227E9A8E00563B34 /* AudioToolbox.framework in Frameworks */,
+				150AF540227E9A8700563B34 /* AVFoundation.framework in Frameworks */,
+				150AF53F227E9A7A00563B34 /* libc++.tbd in Frameworks */,
+				150AF53E227E9A7100563B34 /* Security.framework in Frameworks */,
+				150AF53D227E9A5300563B34 /* libACRCloud_IOS_SDK.x64 in Frameworks */,
+				150AF53A227E9A5300563B34 /* libACRCloud_IOS_SDK.unknown in Frameworks */,
+				150AF53C227E9A5300563B34 /* libACRCloud_IOS_SDK.86 in Frameworks */,
 				752A595C3E7E791F8C79B8A3 /* Pods_The_Listener.framework in Frameworks */,
+				150AF53B227E9A5300563B34 /* libACRCloud_IOS_SDK.arm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +169,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		150AF528227E995A00563B34 /* ACRCloudLibraies */ = {
+			isa = PBXGroup;
+			children = (
+				150AF538227E9A5300563B34 /* libACRCloud_IOS_SDK.86 */,
+				150AF537227E9A5300563B34 /* libACRCloud_IOS_SDK.arm */,
+				150AF536227E9A5300563B34 /* libACRCloud_IOS_SDK.unknown */,
+				150AF539227E9A5300563B34 /* libACRCloud_IOS_SDK.x64 */,
+				150AF529227E995A00563B34 /* include */,
+			);
+			name = ACRCloudLibraies;
+			path = "../../../Downloads/ACRCloud-ios-sdk-1.6.1.0/ACRCloudLibraies";
+			sourceTree = "<group>";
+		};
+		150AF529227E995A00563B34 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				150AF52A227E995A00563B34 /* ACRCloudConfig.h */,
+				150AF52B227E995A00563B34 /* ACRCloudRecognition.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
 		157F3E4C222D3072006A9B2C /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +221,7 @@
 		610B793C2144E86500AEEC0C = {
 			isa = PBXGroup;
 			children = (
+				150AF528227E995A00563B34 /* ACRCloudLibraies */,
 				610B79472144E86500AEEC0C /* The Listener */,
 				610B795F2144E86500AEEC0C /* The ListenerTests */,
 				610B796A2144E86500AEEC0C /* The ListenerUITests */,
@@ -272,6 +321,10 @@
 		C1B0ECEE79DFD2797F7E2E29 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				150AF534227E999400563B34 /* AudioToolbox.framework */,
+				150AF532227E998900563B34 /* AVFoundation.framework */,
+				150AF530227E997F00563B34 /* libc++.tbd */,
+				150AF52E227E997100563B34 /* Security.framework */,
 				5C294BB309707683BC74020F /* Pods_The_Listener.framework */,
 				91512F8CE34368F277CD5EDE /* Pods_The_ListenerTests.framework */,
 				C6046AEE2D1EE942D7EA4F6F /* Pods_The_ListenerUITests.framework */,
