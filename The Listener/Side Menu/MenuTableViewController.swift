@@ -70,7 +70,7 @@ class MenuTableViewController: UITableViewController {
         case 4:
             //Scanner
             //dismiss(animated: true, completion: nil)
-            performSegue(withIdentifier: "scannerSegue", sender: self)
+            performSegue(withIdentifier: "ScanACRSegue", sender: self)
         case 5:
             //Sign-out
             //dismiss(animated: true, completion: nil)
