@@ -766,125 +766,6 @@ EEFydGlzdCBOYW1lA
             </objects>
             <point key="canvasLocation" x="2550" y="158"/>
         </scene>
-        <!--Scanner-->
-        <scene sceneID="Dib-9s-P2G">
-            <objects>
-                <viewController id="zNa-u1-Z0k" customClass="ScannerViewController" customModule="The_Listener" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ftf-jd-dKh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Scanner : Music recptor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4aY-LO-zxH">
-                                <rect key="frame" x="88" y="64" width="198" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8m-t2-kzn">
-                                <rect key="frame" x="169" y="107" width="36" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="PLAY"/>
-                                <connections>
-                                    <action selector="playMethod:" destination="zNa-u1-Z0k" eventType="touchUpInside" id="mFh-QS-pQM"/>
-                                </connections>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Tips: Recorded song will be sent and analised on server for song identification." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="82k-er-siO">
-                                <rect key="frame" x="16" y="573" width="343" height="49.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qjh-NF-8U9">
-                                <rect key="frame" x="27" y="161" width="320" height="330"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PrV-4M-qgt">
-                                <rect key="frame" x="244" y="107" width="39" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="result"/>
-                                <connections>
-                                    <segue destination="fqn-Qo-ECb" kind="presentation" id="GmN-UI-KBT"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6U-0d-28S">
-                                <rect key="frame" x="104" y="511" width="65" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.35686274509999999" green="0.78039215689999997" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Record">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="recordingMethod:" destination="zNa-u1-Z0k" eventType="touchUpInside" id="zg1-YD-CeE"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xBl-Y6-s9k">
-                                <rect key="frame" x="211" y="511" width="72" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Run Script"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Hph-rM-UCS"/>
-                    </view>
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Scanner" id="5g0-GE-rHy">
-                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="ESN-ac-gVF">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <connections>
-                                <action selector="BackToMain:" destination="zNa-u1-Z0k" id="8Fq-Jx-K4m"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="playButton" destination="g8m-t2-kzn" id="aMq-0N-tWg"/>
-                        <outlet property="recordButton" destination="I6U-0d-28S" id="YeY-m3-KYO"/>
-                        <outlet property="scanPanel" destination="qjh-NF-8U9" id="0tP-hs-WLf"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oL8-yB-KJv" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2932" y="-549.17541229385313"/>
-        </scene>
-        <!--Details-->
-        <scene sceneID="fwK-sM-S3o">
-            <objects>
-                <viewController id="a55-mR-sin" customClass="SongDetailsViewController" customModule="The_Listener" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Prc-H8-Iaw">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="result of the matching......" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Hb-qj-EeD">
-                                <rect key="frame" x="58" y="157" width="271" height="313"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="jza-Mm-w0o"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Details" id="sE9-oe-uw0">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="HnN-dU-bdV">
-                            <connections>
-                                <action selector="backMethod:" destination="a55-mR-sin" id="zg7-Ny-UgR"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="resultTextView" destination="0Hb-qj-EeD" id="zJr-qM-ODB"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lt4-GI-6Da" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4772" y="-549.17541229385313"/>
-        </scene>
         <!--The Listener-->
         <scene sceneID="gNO-fV-CVU">
             <objects>
@@ -1023,24 +904,6 @@ EEFydGlzdCBOYW1lA
                 <placeholder placeholderIdentifier="IBFirstResponder" id="phC-SY-m5Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-160.80000000000001" y="909.89505247376314"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="yrZ-l8-U8D">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fqn-Qo-ECb" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="88o-dX-Zc3">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="a55-mR-sin" kind="relationship" relationship="rootViewController" id="rLS-0A-Akm"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ikb-OM-7lg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3783.1999999999998" y="-549.17541229385313"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="BXI-C6-UVX">
@@ -1223,14 +1086,6 @@ EEFydGlzdCBOYW1lA
                                     <action selector="stopRecognition:" destination="2Pb-UU-OsO" eventType="touchUpInside" id="Vob-qZ-3kd"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKO-QA-1vA">
-                                <rect key="frame" x="52" y="315" width="271" height="217"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.98421049120000004" green="0.94536596539999995" blue="0.93618607519999997" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="State : idle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDW-sQ-QpK">
                                 <rect key="frame" x="127" y="589" width="193" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1283,7 +1138,7 @@ EEFydGlzdCBOYW1lA
                         <outlet property="resultView" destination="CKO-QA-1vA" id="wYO-X5-UYT"/>
                         <outlet property="stateLabel" destination="IDW-sQ-QpK" id="ja5-Ij-RXU"/>
                         <outlet property="volumeLabel" destination="bLv-o3-TSC" id="Yab-Ai-wci"/>
-                        <segue destination="f7p-pF-J4S" kind="presentation" identifier="scan_result_segue" id="gcr-Uj-YnN"/>
+                        <segue destination="f7p-pF-J4S" kind="presentation" identifier="scan_result_segue" modalTransitionStyle="crossDissolve" id="gcr-Uj-YnN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DgP-oD-ye0" sceneMemberID="firstResponder"/>
@@ -1297,13 +1152,23 @@ EEFydGlzdCBOYW1lA
                     <view key="view" contentMode="scaleToFill" id="fdT-qh-JHF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKO-QA-1vA">
+                                <rect key="frame" x="52" y="195" width="271" height="235"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.98421049120000004" green="0.94536596539999995" blue="0.93618607519999997" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.82087435787671237" green="0.5408015839041096" blue="0.87467893835616439" alpha="0.27654109589999998" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="uy5-Ou-BaQ"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZrK-bM-LyM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3372" y="-1195"/>
+            <point key="canvasLocation" x="3372" y="-1195.0524737631185"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="get-Dt-jnm">

@@ -19,7 +19,6 @@
 		150AF545227E9B9C00563B34 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 150AF544227E9B9C00563B34 /* AppDelegate.m */; };
 		150AF547227E9BA800563B34 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 150AF546227E9BA800563B34 /* ViewController.m */; };
 		151B453D21983E0F00289C59 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 151B453C21983E0F00289C59 /* GoogleService-Info.plist */; };
-		154A6FF921A7F988005B553F /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154A6FF821A7F988005B553F /* ScannerViewController.swift */; };
 		154A6FFB21A9479B005B553F /* SongDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154A6FFA21A9479A005B553F /* SongDetailsViewController.swift */; };
 		154FD548227F96E6001D6B08 /* ScanResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154FD547227F96E6001D6B08 /* ScanResultViewController.swift */; };
 		157F3E47222D1F0D006A9B2C /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F3E46222D1F0D006A9B2C /* HomeTableViewController.swift */; };
@@ -89,7 +88,6 @@
 		150AF544227E9B9C00563B34 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "../../../../Downloads/ACRCloud-ios-sdk-1.6.1.0/ACRCloudDemo/ACRCloudDemo/AppDelegate.m"; sourceTree = "<group>"; };
 		150AF546227E9BA800563B34 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "../../../../Downloads/ACRCloud-ios-sdk-1.6.1.0/ACRCloudDemo/ACRCloudDemo/ViewController.m"; sourceTree = "<group>"; };
 		151B453C21983E0F00289C59 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		154A6FF821A7F988005B553F /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		154A6FFA21A9479A005B553F /* SongDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetailsViewController.swift; sourceTree = "<group>"; };
 		154FD547227F96E6001D6B08 /* ScanResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanResultViewController.swift; sourceTree = "<group>"; };
 		157F3E46222D1F0D006A9B2C /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
@@ -268,7 +266,6 @@
 				15EA21E7222BF3BC00692538 /* SearchTableViewController.swift */,
 				15EA21E5222BD46E00692538 /* SearchViewController.swift */,
 				154A6FFA21A9479A005B553F /* SongDetailsViewController.swift */,
-				154A6FF821A7F988005B553F /* ScannerViewController.swift */,
 				15CA1D77218386C00040163F /* RegisterViewController.swift */,
 				15CA1D7521836FB50040163F /* ResendViewController.swift */,
 				159FEE3421821280005B0683 /* ForgetViewController.swift */,
@@ -606,7 +603,6 @@
 				615688822165E4480096C94F /* SongPlayerViewController.swift in Sources */,
 				15EA21E6222BD46E00692538 /* SearchViewController.swift in Sources */,
 				157F3E8C222F021C006A9B2C /* MenuTableViewController.swift in Sources */,
-				154A6FF921A7F988005B553F /* ScannerViewController.swift in Sources */,
 				610B79512144E86500AEEC0C /* The_Listener.xcdatamodeld in Sources */,
 				15CA1D7621836FB60040163F /* ResendViewController.swift in Sources */,
 				154FD548227F96E6001D6B08 /* ScanResultViewController.swift in Sources */,
