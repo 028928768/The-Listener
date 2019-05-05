@@ -13,13 +13,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let nav = self.navigationController?.navigationBar
+        nav?.barStyle = UIBarStyle.black
+        nav?.tintColor = UIColor.white
     }
     
     override func viewDidAppear(_ animated: Bool) {
         //1
-        let nav = self.navigationController?.navigationBar
-        nav?.barStyle = UIBarStyle.black
-        nav?.tintColor = UIColor.white
+//        let nav = self.navigationController?.navigationBar
+//        nav?.barStyle = UIBarStyle.black
+//        nav?.tintColor = UIColor.white
     }
 
     override func didReceiveMemoryWarning() {
