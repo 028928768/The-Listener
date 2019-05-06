@@ -1119,6 +1119,14 @@ EEFydGlzdCBOYW1lA
                                     <action selector="startRecognition:" destination="2Pb-UU-OsO" eventType="touchUpInside" id="gsI-d4-kh7"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKO-QA-1vA">
+                                <rect key="frame" x="37" y="175" width="271" height="235"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.98421049120000004" green="0.94536596539999995" blue="0.93618607519999997" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.06905500856164383" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1139,6 +1147,7 @@ EEFydGlzdCBOYW1lA
                         <outlet property="stateLabel" destination="IDW-sQ-QpK" id="ja5-Ij-RXU"/>
                         <outlet property="volumeLabel" destination="bLv-o3-TSC" id="Yab-Ai-wci"/>
                         <segue destination="f7p-pF-J4S" kind="presentation" identifier="scan_result_segue" modalTransitionStyle="crossDissolve" id="gcr-Uj-YnN"/>
+                        <segue destination="f7p-pF-J4S" kind="presentation" identifier="notfound_segue" modalTransitionStyle="crossDissolve" id="itA-8T-16L"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DgP-oD-ye0" sceneMemberID="firstResponder"/>
@@ -1148,23 +1157,35 @@ EEFydGlzdCBOYW1lA
         <!--Scan Result View Controller-->
         <scene sceneID="f3A-Nq-kuJ">
             <objects>
-                <viewController id="f7p-pF-J4S" customClass="ScanResultViewController" customModule="The_Listener" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="f7p-pF-J4S" customClass="ScanResultViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fdT-qh-JHF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKO-QA-1vA">
-                                <rect key="frame" x="52" y="195" width="271" height="235"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QTP-jt-ZGE">
+                                <rect key="frame" x="52" y="157" width="264" height="269"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.98421049120000004" green="0.94536596539999995" blue="0.93618607519999997" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lnE-sn-u9D">
+                                <rect key="frame" x="27" y="20" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButton:" destination="f7p-pF-J4S" eventType="touchUpInside" id="lqC-vg-UIE"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.82087435787671237" green="0.5408015839041096" blue="0.87467893835616439" alpha="0.27654109589999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.82087435787671237" green="0.62556185787671237" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="uy5-Ou-BaQ"/>
                     </view>
+                    <connections>
+                        <outlet property="scanResultView" destination="QTP-jt-ZGE" id="yVO-kr-C1n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZrK-bM-LyM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1197,6 +1218,7 @@ EEFydGlzdCBOYW1lA
         <image name="prev-buttonIMG" width="22" height="26"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="gcr-Uj-YnN"/>
         <segue reference="fJH-GH-bjS"/>
         <segue reference="AQV-wD-5cZ"/>
         <segue reference="skc-zn-Q4u"/>

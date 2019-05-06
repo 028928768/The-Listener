@@ -20,7 +20,7 @@
 		150AF547227E9BA800563B34 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 150AF546227E9BA800563B34 /* ViewController.m */; };
 		151B453D21983E0F00289C59 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 151B453C21983E0F00289C59 /* GoogleService-Info.plist */; };
 		154A6FFB21A9479B005B553F /* SongDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154A6FFA21A9479A005B553F /* SongDetailsViewController.swift */; };
-		154FD548227F96E6001D6B08 /* ScanResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154FD547227F96E6001D6B08 /* ScanResultViewController.swift */; };
+		154FD54C227FA7C3001D6B08 /* ScanResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154FD54B227FA7C3001D6B08 /* ScanResultViewController.m */; };
 		157F3E47222D1F0D006A9B2C /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F3E46222D1F0D006A9B2C /* HomeTableViewController.swift */; };
 		157F3E49222D2B81006A9B2C /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F3E48222D2B81006A9B2C /* HomeTableViewCell.swift */; };
 		157F3E4B222D3063006A9B2C /* HomeCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F3E4A222D3063006A9B2C /* HomeCollection.swift */; };
@@ -89,7 +89,8 @@
 		150AF546227E9BA800563B34 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "../../../../Downloads/ACRCloud-ios-sdk-1.6.1.0/ACRCloudDemo/ACRCloudDemo/ViewController.m"; sourceTree = "<group>"; };
 		151B453C21983E0F00289C59 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		154A6FFA21A9479A005B553F /* SongDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetailsViewController.swift; sourceTree = "<group>"; };
-		154FD547227F96E6001D6B08 /* ScanResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanResultViewController.swift; sourceTree = "<group>"; };
+		154FD54A227FA74C001D6B08 /* ScanResultViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScanResultViewController.h; sourceTree = "<group>"; };
+		154FD54B227FA7C3001D6B08 /* ScanResultViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanResultViewController.m; sourceTree = "<group>"; };
 		157F3E46222D1F0D006A9B2C /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		157F3E48222D2B81006A9B2C /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		157F3E4A222D3063006A9B2C /* HomeCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollection.swift; sourceTree = "<group>"; };
@@ -254,11 +255,12 @@
 				610B794A2144E86500AEEC0C /* ViewController.swift */,
 				612840602157C945006E9A99 /* SongTableViewCell.swift */,
 				610B794C2144E86500AEEC0C /* Main.storyboard */,
-				154FD547227F96E6001D6B08 /* ScanResultViewController.swift */,
+				154FD54A227FA74C001D6B08 /* ScanResultViewController.h */,
+				154FD54B227FA7C3001D6B08 /* ScanResultViewController.m */,
 				150AF542227E9B8200563B34 /* ScanViewController.h */,
+				150AF546227E9BA800563B34 /* ViewController.m */,
 				150AF544227E9B9C00563B34 /* AppDelegate.m */,
 				150AF543227E9B9200563B34 /* AppDelegate.h */,
-				150AF546227E9BA800563B34 /* ViewController.m */,
 				157F3E91222FAD57006A9B2C /* PlaylistViewController.swift */,
 				157F3E8D222F7D7D006A9B2C /* ProfileViewController.swift */,
 				157F3E8F222F7D8F006A9B2C /* EditProfileViewController.swift */,
@@ -593,6 +595,7 @@
 				157F3E63222EF6BC006A9B2C /* SWRevealViewController.m in Sources */,
 				612840652157D787006E9A99 /* Song.swift in Sources */,
 				157F3E92222FAD57006A9B2C /* PlaylistViewController.swift in Sources */,
+				154FD54C227FA7C3001D6B08 /* ScanResultViewController.m in Sources */,
 				15CA1D78218386C00040163F /* RegisterViewController.swift in Sources */,
 				612840612157C945006E9A99 /* SongTableViewCell.swift in Sources */,
 				610B794B2144E86500AEEC0C /* ViewController.swift in Sources */,
@@ -605,7 +608,6 @@
 				157F3E8C222F021C006A9B2C /* MenuTableViewController.swift in Sources */,
 				610B79512144E86500AEEC0C /* The_Listener.xcdatamodeld in Sources */,
 				15CA1D7621836FB60040163F /* ResendViewController.swift in Sources */,
-				154FD548227F96E6001D6B08 /* ScanResultViewController.swift in Sources */,
 				612840672157EB11006E9A99 /* SongViewController.swift in Sources */,
 				157F3E49222D2B81006A9B2C /* HomeTableViewCell.swift in Sources */,
 				150AF545227E9B9C00563B34 /* AppDelegate.m in Sources */,
