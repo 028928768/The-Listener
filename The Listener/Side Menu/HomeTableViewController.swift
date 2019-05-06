@@ -10,7 +10,9 @@ import UIKit
 
 class HomeTableViewController: UITableViewController {
     //MARK: Properties
-     var PopPlaylist = [Home]()
+     var HomePlayList = [Home]()
+     //real pop playlist
+     var pop_PlayList = [Song]()
     
     @IBOutlet weak var sideMenuButton: UIBarButtonItem!
     
@@ -50,7 +52,7 @@ class HomeTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return PopPlaylist.count
+        return HomePlayList.count
     }
 
     
@@ -60,12 +62,13 @@ class HomeTableViewController: UITableViewController {
             fatalError("The dequeued cell is not an instance of HomeTableViewCell")
         }
 
-        let pop_playlist = PopPlaylist[indexPath.row]
+        let pop_playlist = HomePlayList[indexPath.row]
         //assign data to cell
         cell.playListCoverView.image = pop_playlist.playListCover
         cell.playListIconView.image = pop_playlist.playListIcon
         cell.playListName.text = pop_playlist.playListName
         cell.playListDescription.text = pop_playlist.playListDiscription
+        
 
         return cell
     }
@@ -119,7 +122,8 @@ class HomeTableViewController: UITableViewController {
             let playListVC: PlaylistViewController = segue.destination as! PlaylistViewController
             
             let selectedSongIndex = tableView.indexPathForSelectedRow!.row
-            playListVC.selectedPlayList = PopPlaylist[selectedSongIndex]
+            playListVC.selectedPlayList = HomePlayList[selectedSongIndex]
+            playListVC.SongLists = HomePlayList[selectedSongIndex].songsInPlaylist
         case "searchSongs":
             print("Discovery!")
         default:
@@ -146,34 +150,58 @@ class HomeTableViewController: UITableViewController {
         let playList8_cover = UIImage(named: "ThaipopIMG")
        // let playList2Cover = UIImage(named: "FirstTime-Cover")
         
-        guard let playList1 = Home(playListName: "Pop Musics", playListCover: playList1_cover, playListDiscription: "pop big hits music compilations", playListIcon: playListIcon) else {
+        //putting songs in each playLists
+        let song1Cover = UIImage(named: "Me-Cover")
+       // let song1Cover = UIImage(named: "Problem-Cover")
+        let song2Cover = UIImage(named: "Prism-Cover")
+        let song3Cover = UIImage(named: "FirstTime-Cover")
+        let song4Cover = UIImage(named: "Havana-Cover")
+        guard let song1 = Song(name: "7 rings",artist: "Ariana Grande",album: "Thanks you next",cover: song1Cover!) else {
+            fatalError("Unable to instatiate song1")
+        }
+        guard let song2 = Song(name: "Girls Like You",artist: "Maroon 5 - Adam levine",album: "My Everything",cover: song1Cover!) else {
+            fatalError("Unable to instatiate song2")
+        }
+        guard let song3 = Song(name: "Never Be the Same",artist: "Camila Cabello",album: "Havana",cover:song1Cover!) else {
+            fatalError("Unable to instatiate song2")
+        }
+        guard let song4 = Song(name: "Paris in the Rain",artist: "Lauv",album: "Stargazing",cover: song1Cover!) else {
+            fatalError("Unable to instatiate song3")
+        }
+        guard let song5 = Song(name: "If I Can't Have You",artist: "Shawn Mendes",album:"Sky",cover: song1Cover!) else {
+            fatalError("Unable to instatiate song4")
+        }
+        pop_PlayList += [song1,song2,song3,song4,song5]
+        
+        
+        guard let playList1 = Home(playListName: "Pop Musics", playListCover: playList1_cover, playListDiscription: "pop big hits music compilations", playListIcon: playListIcon, songsInPlaylist: pop_PlayList) else {
             fatalError("Playlist 1 error!!")
         }
         
-        guard let playList2 = Home(playListName: "Lover", playListCover: playList2_cover, playListDiscription: "Taylor Swift - latest album is out!", playListIcon: playListIcon) else {
-            fatalError("Playlist 2 error!!")
-        }
-        guard let playList3 = Home(playListName: "Peaceful Guitar", playListCover: playList3_cover, playListDiscription: "Study and Relax Guitar Instrument", playListIcon: playListIcon) else {
-            fatalError("Playlist 3 error!!")
-        }
-        guard let playList4 = Home(playListName: "Original Soundtrack", playListCover: playList4_cover, playListDiscription: "Korean drama ost - The Liar and his lovers", playListIcon: playListIcon) else {
-            fatalError("Playlist 4 error!!")
-        }
-        guard let playList5 = Home(playListName: "Jazz Latenight", playListCover: playList5_cover, playListDiscription: "Enjoy listening jazz music", playListIcon: playListIcon) else {
-            fatalError("Playlist 5 error!!")
-        }
-        guard let playList6 = Home(playListName: "Country Songs", playListCover: playList6_cover, playListDiscription: "Listen to peaceful and relaxing country musics", playListIcon: playListIcon) else {
-            fatalError("Playlist 6 error!!")
-        }
-        guard let playList7 = Home(playListName: "Reputation", playListCover: playList7_cover, playListDiscription: "Listen to taylor swift reputation release!", playListIcon: playListIcon) else {
-            fatalError("Playlist 7 error!!")
-        }
-        guard let playList8 = Home(playListName: "Thai-Pops", playListCover: playList8_cover, playListDiscription: "Let's listen to top hit thai songs in 2019!", playListIcon: playListIcon) else {
-            fatalError("Playlist 7 error!!")
-        }
+//        guard let playList2 = Home(playListName: "Lover", playListCover: playList2_cover, playListDiscription: "Taylor Swift - latest album is out!", playListIcon: playListIcon) else {
+//            fatalError("Playlist 2 error!!")
+//        }
+//        guard let playList3 = Home(playListName: "Peaceful Guitar", playListCover: playList3_cover, playListDiscription: "Study and Relax Guitar Instrument", playListIcon: playListIcon) else {
+//            fatalError("Playlist 3 error!!")
+//        }
+//        guard let playList4 = Home(playListName: "Original Soundtrack", playListCover: playList4_cover, playListDiscription: "Korean drama ost - The Liar and his lovers", playListIcon: playListIcon) else {
+//            fatalError("Playlist 4 error!!")
+//        }
+//        guard let playList5 = Home(playListName: "Jazz Latenight", playListCover: playList5_cover, playListDiscription: "Enjoy listening jazz music", playListIcon: playListIcon) else {
+//            fatalError("Playlist 5 error!!")
+//        }
+//        guard let playList6 = Home(playListName: "Country Songs", playListCover: playList6_cover, playListDiscription: "Listen to peaceful and relaxing country musics", playListIcon: playListIcon) else {
+//            fatalError("Playlist 6 error!!")
+//        }
+//        guard let playList7 = Home(playListName: "Reputation", playListCover: playList7_cover, playListDiscription: "Listen to taylor swift reputation release!", playListIcon: playListIcon) else {
+//            fatalError("Playlist 7 error!!")
+//        }
+//        guard let playList8 = Home(playListName: "Thai-Pops", playListCover: playList8_cover, playListDiscription: "Let's listen to top hit thai songs in 2019!", playListIcon: playListIcon) else {
+//            fatalError("Playlist 7 error!!")
+//        }
         
-        PopPlaylist += [playList1,playList2,playList3,playList4,playList5,playList6,playList7,playList8]
-        
+       // HomePlayList += [playList1,playList2,playList3,playList4,playList5,playList6,playList7,playList8]
+         HomePlayList += [playList1]
     }
     //MARK: Graphics
     func assignBackGround(){

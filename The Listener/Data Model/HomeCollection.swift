@@ -15,9 +15,10 @@ class Home {
     var playListCover: UIImage?
     var playListDiscription: String
     var playListIcon: UIImage?
+    var songsInPlaylist : [Song]
     
     //MARK: Initialization
-    init? (playListName:String, playListCover: UIImage?, playListDiscription: String, playListIcon: UIImage?){
+    init? (playListName:String, playListCover: UIImage?, playListDiscription: String, playListIcon: UIImage?,songsInPlaylist: [Song]){
     //check if playlist name is exist?
         if playListName.isEmpty {
             return nil
@@ -28,6 +29,7 @@ class Home {
         self.playListCover = playListCover
         self.playListDiscription = playListDiscription
         self.playListIcon = playListIcon
+        self.songsInPlaylist = songsInPlaylist
     
         }
 }

@@ -23,6 +23,12 @@
 		154FD54C227FA7C3001D6B08 /* ScanResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154FD54B227FA7C3001D6B08 /* ScanResultViewController.m */; };
 		154FD55222803572001D6B08 /* live4music.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 154FD55122803572001D6B08 /* live4music.jpg */; };
 		154FD5542280785E001D6B08 /* ME!.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 154FD5532280785E001D6B08 /* ME!.mp3 */; };
+		154FD55E22808BDD001D6B08 /* PlayListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154FD55D22808BDD001D6B08 /* PlayListTableViewCell.swift */; };
+		154FD5602280A818001D6B08 /* If I Can't Have You.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 154FD55F2280A818001D6B08 /* If I Can't Have You.mp3 */; };
+		154FD5652280A822001D6B08 /* Paris in the Rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 154FD5612280A821001D6B08 /* Paris in the Rain.mp3 */; };
+		154FD5662280A822001D6B08 /* Never Be the Same.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 154FD5622280A821001D6B08 /* Never Be the Same.mp3 */; };
+		154FD5672280A822001D6B08 /* Girls Like You.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 154FD5632280A822001D6B08 /* Girls Like You.mp3 */; };
+		154FD5682280A822001D6B08 /* 7 rings.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 154FD5642280A822001D6B08 /* 7 rings.mp3 */; };
 		157F3E47222D1F0D006A9B2C /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F3E46222D1F0D006A9B2C /* HomeTableViewController.swift */; };
 		157F3E49222D2B81006A9B2C /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F3E48222D2B81006A9B2C /* HomeTableViewCell.swift */; };
 		157F3E4B222D3063006A9B2C /* HomeCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F3E4A222D3063006A9B2C /* HomeCollection.swift */; };
@@ -95,6 +101,12 @@
 		154FD54B227FA7C3001D6B08 /* ScanResultViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanResultViewController.m; sourceTree = "<group>"; };
 		154FD55122803572001D6B08 /* live4music.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = live4music.jpg; sourceTree = SOURCE_ROOT; };
 		154FD5532280785E001D6B08 /* ME!.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ME!.mp3"; sourceTree = "<group>"; };
+		154FD55D22808BDD001D6B08 /* PlayListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListTableViewCell.swift; sourceTree = "<group>"; };
+		154FD55F2280A818001D6B08 /* If I Can't Have You.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "If I Can't Have You.mp3"; sourceTree = "<group>"; };
+		154FD5612280A821001D6B08 /* Paris in the Rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Paris in the Rain.mp3"; sourceTree = "<group>"; };
+		154FD5622280A821001D6B08 /* Never Be the Same.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Never Be the Same.mp3"; sourceTree = "<group>"; };
+		154FD5632280A822001D6B08 /* Girls Like You.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Girls Like You.mp3"; sourceTree = "<group>"; };
+		154FD5642280A822001D6B08 /* 7 rings.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "7 rings.mp3"; sourceTree = "<group>"; };
 		157F3E46222D1F0D006A9B2C /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		157F3E48222D2B81006A9B2C /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		157F3E4A222D3063006A9B2C /* HomeCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollection.swift; sourceTree = "<group>"; };
@@ -205,6 +217,11 @@
 		154FD55522807A0B001D6B08 /* Pops */ = {
 			isa = PBXGroup;
 			children = (
+				154FD5642280A822001D6B08 /* 7 rings.mp3 */,
+				154FD5632280A822001D6B08 /* Girls Like You.mp3 */,
+				154FD5622280A821001D6B08 /* Never Be the Same.mp3 */,
+				154FD5612280A821001D6B08 /* Paris in the Rain.mp3 */,
+				154FD55F2280A818001D6B08 /* If I Can't Have You.mp3 */,
 			);
 			path = Pops;
 			sourceTree = "<group>";
@@ -316,6 +333,7 @@
 				150AF544227E9B9C00563B34 /* AppDelegate.m */,
 				150AF543227E9B9200563B34 /* AppDelegate.h */,
 				157F3E91222FAD57006A9B2C /* PlaylistViewController.swift */,
+				154FD55D22808BDD001D6B08 /* PlayListTableViewCell.swift */,
 				157F3E8D222F7D7D006A9B2C /* ProfileViewController.swift */,
 				157F3E8F222F7D8F006A9B2C /* EditProfileViewController.swift */,
 				157F3E48222D2B81006A9B2C /* HomeTableViewCell.swift */,
@@ -523,16 +541,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				154FD5652280A822001D6B08 /* Paris in the Rain.mp3 in Resources */,
 				61568884216613120096C94F /* Havana.mp3 in Resources */,
 				151B453D21983E0F00289C59 /* GoogleService-Info.plist in Resources */,
 				154FD5542280785E001D6B08 /* ME!.mp3 in Resources */,
 				610B79562144E86500AEEC0C /* LaunchScreen.storyboard in Resources */,
 				61658A7821627BC500B5D46E /* First Time.mp3 in Resources */,
+				154FD5682280A822001D6B08 /* 7 rings.mp3 in Resources */,
 				610B79532144E86500AEEC0C /* Assets.xcassets in Resources */,
 				154FD55222803572001D6B08 /* live4music.jpg in Resources */,
+				154FD5662280A822001D6B08 /* Never Be the Same.mp3 in Resources */,
 				610B794E2144E86500AEEC0C /* Main.storyboard in Resources */,
 				61658A7921627BC500B5D46E /* Problem.mp3 in Resources */,
+				154FD5672280A822001D6B08 /* Girls Like You.mp3 in Resources */,
 				610A49AA2166882300C22EA4 /* Dark Horse.mp3 in Resources */,
+				154FD5602280A818001D6B08 /* If I Can't Have You.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -665,6 +688,7 @@
 				610B794B2144E86500AEEC0C /* ViewController.swift in Sources */,
 				610B79492144E86500AEEC0C /* AppDelegate.swift in Sources */,
 				159FEE2B2181D10B005B0683 /* LoginViewController.swift in Sources */,
+				154FD55E22808BDD001D6B08 /* PlayListTableViewCell.swift in Sources */,
 				15EA21E8222BF3BC00692538 /* SearchTableViewController.swift in Sources */,
 				157F3E47222D1F0D006A9B2C /* HomeTableViewController.swift in Sources */,
 				615688822165E4480096C94F /* SongPlayerViewController.swift in Sources */,

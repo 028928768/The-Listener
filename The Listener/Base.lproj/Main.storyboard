@@ -874,16 +874,51 @@ EEFydGlzdCBOYW1lA
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="w9s-zZ-e0V">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tracksIdentifier" rowHeight="59" id="caO-e7-DsR" customClass="PlayListTableViewCell" customModule="The_Listener" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="59"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="w9s-zZ-e0V" id="iTa-I0-LrX">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="caO-e7-DsR" id="2jk-8J-1vq">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="58.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <color key="backgroundColor" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Song Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pch-eO-TWY">
+                                                    <rect key="frame" x="18" y="0.0" width="280" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="18"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Artist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E8E-6v-x7h">
+                                                    <rect key="frame" x="15" y="27" width="145" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZFa-X5-BBr">
+                                                    <rect key="frame" x="327" y="21" width="8" height="17"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Album" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x9O-w7-j6s">
+                                                    <rect key="frame" x="168" y="27" width="130" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="trackAlbum" destination="x9O-w7-j6s" id="yij-T8-DZO"/>
+                                            <outlet property="trackArrow" destination="ZFa-X5-BBr" id="Ja9-Et-C1q"/>
+                                            <outlet property="trackArtist" destination="E8E-6v-x7h" id="Cam-ck-c2G"/>
+                                            <outlet property="trackName" destination="Pch-eO-TWY" id="wZe-vr-e0y"/>
+                                            <segue destination="euK-Ge-4OR" kind="show" identifier="playList_play" id="dU1-LS-kym"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="2PN-f8-xEC" id="hEw-Fd-sze"/>
+                                </connections>
                             </tableView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K6d-R0-iog">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="247"/>
@@ -914,6 +949,7 @@ EEFydGlzdCBOYW1lA
                     </view>
                     <navigationItem key="navigationItem" id="H93-P8-YG1"/>
                     <connections>
+                        <outlet property="PlayListTableView" destination="N9Z-Va-6Np" id="ANr-oY-NSQ"/>
                         <outlet property="playListCover" destination="K6d-R0-iog" id="NEB-gj-gd9"/>
                         <outlet property="playListDiscription" destination="3OH-Ib-Stp" id="QHr-hY-ZGz"/>
                         <outlet property="playListName" destination="rtJ-Qd-pVo" id="8Wg-88-lfR"/>
@@ -1271,6 +1307,7 @@ EEFydGlzdCBOYW1lA
     <inferredMetricsTieBreakers>
         <segue reference="fJH-GH-bjS"/>
         <segue reference="gcr-Uj-YnN"/>
+        <segue reference="dU1-LS-kym"/>
         <segue reference="9Ke-DP-g9U"/>
         <segue reference="skc-zn-Q4u"/>
     </inferredMetricsTieBreakers>
