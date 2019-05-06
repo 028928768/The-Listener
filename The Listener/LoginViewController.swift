@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController,UITextFieldDelegate {
     //MARK Images
     let logoImage = UIImage(named: "LogoIMG")
     let loginPanelImage = UIImage(named: "LoginPanelIMG")
@@ -22,8 +22,18 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         assignBackGround()
-        
+        loginEmail.delegate = self
+        loginPassword.delegate = self
+        self.hideKeyboardWhenTappedAround()
+        RunLoop.current.run(until: Date(timeIntervalSinceNow : 1.0))
     }
+    //MARK: TextFieldDelegates
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        //return keyboard
+        textField.resignFirstResponder()
+        return true
+    }
+   
     
     //MARK Actions
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -70,4 +80,14 @@ class LoginViewController: UIViewController {
     }
     */
 
+}; extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
 }

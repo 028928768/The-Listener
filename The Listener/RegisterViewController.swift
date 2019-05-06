@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class RegisterViewController: UIViewController {
+class RegisterViewController: UIViewController, UITextFieldDelegate {
     //MARK Images
     let registerPanelImage = UIImage(named: "RegisterPanelIMG")
     let registerPanelDetailsImage = UIImage(named: "RegisterDetailIMG")
@@ -20,8 +20,16 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var registPassword: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        registEmail.delegate = self
+        registPassword.delegate = self
         assignBackGround()
+         self.hideKeyboardWhenTappedAround()
+    }
+    //MARK: Keyboard
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        //return keyboard
+        textField.resignFirstResponder()
+        return true
     }
     
     //MARK Actions:

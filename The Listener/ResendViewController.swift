@@ -17,7 +17,7 @@ class ResendViewController: UIViewController {
     @IBOutlet weak var rocketOutlet: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         assignBackGround()
     }
     

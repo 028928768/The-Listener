@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class ForgetViewController: UIViewController {
+class ForgetViewController: UIViewController, UITextFieldDelegate {
     //MARK Images
     let backgroundImage = UIImage(named: "ForgetBackGroundIMG")
     let forgetLogoImage = UIImage(named:"ForgetLogoIMG" )
@@ -22,10 +22,16 @@ class ForgetViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        forgetEmail.delegate = self
         assignBackGround()
+        self.hideKeyboardWhenTappedAround()
     }
-    
+    //MARK: Keyboard
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        //return keyboard
+        textField.resignFirstResponder()
+        return true
+    }
     //MARK Actions
     func assignBackGround(){
         backgroundOutlet.image = backgroundImage
