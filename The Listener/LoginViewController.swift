@@ -40,6 +40,11 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         return .lightContent
     }
     
+    @IBAction func setLogin(_ sender: UIButton) {
+        loginEmail.text = "kantachat_2539@hotmail.com"
+        loginPassword.text = "028928768"
+    }
+    
     func assignBackGround(){
         let background = UIImage(named: "LoginBackGroundIMG")
         let imageView = UIImageView(frame: view.bounds)

@@ -88,6 +88,18 @@
                                     <outletCollection property="gestureRecognizers" destination="7b6-ez-IY9" appends="YES" id="PTc-be-kSx"/>
                                 </connections>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpk-TL-bne">
+                                <rect key="frame" x="264" y="564" width="38" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.3579765862" green="0.77883090099999996" blue="0.56212730749999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="set">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="setLogin:" destination="dCo-nm-Sk0" eventType="touchUpInside" id="8dT-Zd-ySF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="GL0-tG-iSr"/>
@@ -112,7 +124,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="282" y="-1340"/>
+            <point key="canvasLocation" x="280.80000000000001" y="-1340.7796101949027"/>
         </scene>
         <!--Forget View Controller-->
         <scene sceneID="JCl-sT-zc7">
@@ -494,7 +506,7 @@
                         <viewLayoutGuide key="safeArea" id="lOs-v3-xqH"/>
                     </view>
                     <navigationItem key="navigationItem" title="Storage" id="K2I-Nm-Cy8">
-                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="2E1-LW-3GM">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="prev-buttonIMG" id="2E1-LW-3GM">
                             <connections>
                                 <action selector="backToMainButton:" destination="3TB-xE-GUO" id="wcr-H2-mnQ"/>
                             </connections>
@@ -596,7 +608,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gpo-Xm-HNa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-52" y="158"/>
+            <point key="canvasLocation" x="-268" y="211"/>
         </scene>
         <!--Profile-->
         <scene sceneID="ecI-tu-t22">
@@ -609,7 +621,7 @@
                         <viewLayoutGuide key="safeArea" id="IyS-Cs-hzn"/>
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="ldw-2r-Tzt">
-                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="PZ6-qc-o5C">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="prev-buttonIMG" id="PZ6-qc-o5C">
                             <connections>
                                 <action selector="backToHomebutton:" destination="eSU-o8-4FX" id="OkW-KO-hLo"/>
                             </connections>
