@@ -22,6 +22,7 @@
 		154A6FFB21A9479B005B553F /* SongDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154A6FFA21A9479A005B553F /* SongDetailsViewController.swift */; };
 		154FD54C227FA7C3001D6B08 /* ScanResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154FD54B227FA7C3001D6B08 /* ScanResultViewController.m */; };
 		154FD55222803572001D6B08 /* live4music.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 154FD55122803572001D6B08 /* live4music.jpg */; };
+		154FD5542280785E001D6B08 /* ME!.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 154FD5532280785E001D6B08 /* ME!.mp3 */; };
 		157F3E47222D1F0D006A9B2C /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F3E46222D1F0D006A9B2C /* HomeTableViewController.swift */; };
 		157F3E49222D2B81006A9B2C /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F3E48222D2B81006A9B2C /* HomeTableViewCell.swift */; };
 		157F3E4B222D3063006A9B2C /* HomeCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F3E4A222D3063006A9B2C /* HomeCollection.swift */; };
@@ -93,6 +94,7 @@
 		154FD54A227FA74C001D6B08 /* ScanResultViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScanResultViewController.h; sourceTree = "<group>"; };
 		154FD54B227FA7C3001D6B08 /* ScanResultViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanResultViewController.m; sourceTree = "<group>"; };
 		154FD55122803572001D6B08 /* live4music.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = live4music.jpg; sourceTree = SOURCE_ROOT; };
+		154FD5532280785E001D6B08 /* ME!.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ME!.mp3"; sourceTree = "<group>"; };
 		157F3E46222D1F0D006A9B2C /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		157F3E48222D2B81006A9B2C /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		157F3E4A222D3063006A9B2C /* HomeCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollection.swift; sourceTree = "<group>"; };
@@ -198,6 +200,55 @@
 				150AF52B227E995A00563B34 /* ACRCloudRecognition.h */,
 			);
 			path = include;
+			sourceTree = "<group>";
+		};
+		154FD55522807A0B001D6B08 /* Pops */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pops;
+			sourceTree = "<group>";
+		};
+		154FD55622807A2E001D6B08 /* Lover */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lover;
+			sourceTree = "<group>";
+		};
+		154FD55722807A3F001D6B08 /* Peaceful-Guitar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Peaceful-Guitar";
+			sourceTree = "<group>";
+		};
+		154FD55922807A53001D6B08 /* Korean-Ost */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Korean-Ost";
+			sourceTree = "<group>";
+		};
+		154FD55A22807A6C001D6B08 /* Jazz */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Jazz;
+			sourceTree = "<group>";
+		};
+		154FD55B22807A85001D6B08 /* Country */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Country;
+			sourceTree = "<group>";
+		};
+		154FD55C22807A8F001D6B08 /* Reputation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Reputation;
 			sourceTree = "<group>";
 		};
 		157F3E4C222D3072006A9B2C /* Data Model */ = {
@@ -312,6 +363,14 @@
 		61658A7321627B0600B5D46E /* Songs */ = {
 			isa = PBXGroup;
 			children = (
+				154FD55C22807A8F001D6B08 /* Reputation */,
+				154FD55B22807A85001D6B08 /* Country */,
+				154FD55A22807A6C001D6B08 /* Jazz */,
+				154FD55922807A53001D6B08 /* Korean-Ost */,
+				154FD55722807A3F001D6B08 /* Peaceful-Guitar */,
+				154FD55622807A2E001D6B08 /* Lover */,
+				154FD55522807A0B001D6B08 /* Pops */,
+				154FD5532280785E001D6B08 /* ME!.mp3 */,
 				610A49A92166882300C22EA4 /* Dark Horse.mp3 */,
 				61568883216613120096C94F /* Havana.mp3 */,
 				61658A7521627BC400B5D46E /* First Time.mp3 */,
@@ -466,6 +525,7 @@
 			files = (
 				61568884216613120096C94F /* Havana.mp3 in Resources */,
 				151B453D21983E0F00289C59 /* GoogleService-Info.plist in Resources */,
+				154FD5542280785E001D6B08 /* ME!.mp3 in Resources */,
 				610B79562144E86500AEEC0C /* LaunchScreen.storyboard in Resources */,
 				61658A7821627BC500B5D46E /* First Time.mp3 in Resources */,
 				610B79532144E86500AEEC0C /* Assets.xcassets in Resources */,

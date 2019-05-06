@@ -109,10 +109,14 @@ class SongViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
         private func loadSampleSongs(){
             
+            let song0Cover = UIImage(named: "Me-Cover")
             let song1Cover = UIImage(named: "Problem-Cover")
             let song2Cover = UIImage(named: "Prism-Cover")
             let song3Cover = UIImage(named: "FirstTime-Cover")
             let song4Cover = UIImage(named: "Havana-Cover")
+            guard let song0 = Song(name: "ME!",artist: "Taylor Swift",album: "Lovers",cover: song0Cover!) else {
+                fatalError("Unable to instatiate song0")
+            }
             guard let song1 = Song(name: "Problem",artist: "Ariana Grande",album: "My Everything",cover: song1Cover!) else {
                 fatalError("Unable to instatiate song1")
             }
@@ -125,7 +129,7 @@ class SongViewController: UIViewController, UITableViewDelegate, UITableViewData
             guard let song4 = Song(name: "Havana",artist: "Camila Cabello;feat. Young Thug",album:"Camila",cover: song4Cover!) else {
                 fatalError("Unable to instatiate song4")
             }
-            songs += [song1,song2,song3,song4]
+            songs += [song0,song1,song2,song3,song4]
         }
     func assignBackGround(){
         let background = UIImage(named: "StorageBGIMG")

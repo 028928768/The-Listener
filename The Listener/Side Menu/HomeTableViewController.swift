@@ -137,18 +137,20 @@ class HomeTableViewController: UITableViewController {
         //Assign Icon UIImages
         let playListIcon = UIImage(named: "play-buttonIMG")
         let playList1_cover = UIImage(named: "PopCoverIMG")
-        let playList2_cover = UIImage(named: "ReputationIMG")
+        let playList2_cover = UIImage(named: "MeIMG")
         let playList3_cover = UIImage(named: "GuitarIMG")
         let playList4_cover = UIImage(named: "OriginalIMG")
         let playList5_cover = UIImage(named: "JazzIMG")
         let playList6_cover = UIImage(named: "CountryIMG")
-        let playList2Cover = UIImage(named: "FirstTime-Cover")
+        let playList7_cover = UIImage(named: "ReputationIMG")
+        let playList8_cover = UIImage(named: "ThaipopIMG")
+       // let playList2Cover = UIImage(named: "FirstTime-Cover")
         
         guard let playList1 = Home(playListName: "Pop Musics", playListCover: playList1_cover, playListDiscription: "pop big hits music compilations", playListIcon: playListIcon) else {
             fatalError("Playlist 1 error!!")
         }
         
-        guard let playList2 = Home(playListName: "Reputation", playListCover: playList2_cover, playListDiscription: "Taylor Swift - latest album is out!", playListIcon: playListIcon) else {
+        guard let playList2 = Home(playListName: "Lover", playListCover: playList2_cover, playListDiscription: "Taylor Swift - latest album is out!", playListIcon: playListIcon) else {
             fatalError("Playlist 2 error!!")
         }
         guard let playList3 = Home(playListName: "Peaceful Guitar", playListCover: playList3_cover, playListDiscription: "Study and Relax Guitar Instrument", playListIcon: playListIcon) else {
@@ -163,8 +165,14 @@ class HomeTableViewController: UITableViewController {
         guard let playList6 = Home(playListName: "Country Songs", playListCover: playList6_cover, playListDiscription: "Listen to peaceful and relaxing country musics", playListIcon: playListIcon) else {
             fatalError("Playlist 6 error!!")
         }
+        guard let playList7 = Home(playListName: "Reputation", playListCover: playList7_cover, playListDiscription: "Listen to taylor swift reputation release!", playListIcon: playListIcon) else {
+            fatalError("Playlist 7 error!!")
+        }
+        guard let playList8 = Home(playListName: "Thai-Pops", playListCover: playList8_cover, playListDiscription: "Let's listen to top hit thai songs in 2019!", playListIcon: playListIcon) else {
+            fatalError("Playlist 7 error!!")
+        }
         
-        PopPlaylist += [playList1,playList2,playList3,playList4,playList5,playList6]
+        PopPlaylist += [playList1,playList2,playList3,playList4,playList5,playList6,playList7,playList8]
         
     }
     //MARK: Graphics
@@ -179,15 +187,7 @@ class HomeTableViewController: UITableViewController {
         self.view.sendSubview(toBack: imageView)
     }
     
-//    @objc func handleMenuToggle(){
-//        print("Toggle Menu")
-//    }
-    
-    //MARK: Side Menu
-//    func configureNavigationBar(){
-//        let menuIcon = UIImage(named: "menuIMG")
-//        navigationItem.leftBarButtonItem = UIBarButtonItem(image: menuIcon?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(handleMenuToggle))
-//    }
+
     
     
 
