@@ -12,7 +12,7 @@ class EditProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        assignBackGround()
+       // assignBackGround()
 
         // Do any additional setup after loading the view.
     }
@@ -36,7 +36,7 @@ class EditProfileViewController: UIViewController {
     */
     
     func assignBackGround(){
-        let background = UIImage(named: "homeWallpaperIMG")
+        let background = UIImage(named: "editprofileIMG")
         let imageView = UIImageView(frame: view.bounds)
         imageView.contentMode = UIViewContentMode.scaleAspectFill
         imageView.clipsToBounds = true

@@ -12,7 +12,7 @@ class ProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        assignBackGround()
+      //  assignBackGround()
 
         let nav = self.navigationController?.navigationBar
         nav?.barStyle = UIBarStyle.blackTranslucent
@@ -40,7 +40,8 @@ class ProfileViewController: UIViewController {
     */
     //MARK: Graphics
     func assignBackGround(){
-        let background = UIImage(named: "OriginalBGIMG")
+        //let background = UIImage(named: "OriginalBGIMG")
+        let background = UIImage(named: "profileIMG")
         let imageView = UIImageView(frame: view.bounds)
         imageView.contentMode = UIViewContentMode.scaleAspectFill
         imageView.clipsToBounds = true

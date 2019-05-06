@@ -617,6 +617,12 @@
                     <view key="view" contentMode="scaleToFill" id="tD7-pu-jKf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profileIMG" translatesAutoresizingMaskIntoConstraints="NO" id="upf-n0-tho">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="IyS-Cs-hzn"/>
                     </view>
@@ -628,7 +634,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="edit" id="H2u-e6-6dc">
                             <connections>
-                                <segue destination="X22-9v-gcW" kind="showDetail" id="iy1-4n-r8u"/>
+                                <segue destination="X22-9v-gcW" kind="show" id="iy1-4n-r8u"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -967,7 +973,7 @@ EEFydGlzdCBOYW1lA
                     <connections>
                         <segue destination="l7d-LO-4DM" kind="showDetail" identifier="storageSegue" id="FII-Z0-9FD"/>
                         <segue destination="w9u-GN-QUf" kind="presentation" identifier="discoverSegue" id="AQV-wD-5cZ"/>
-                        <segue destination="4Gm-8N-lbO" kind="showDetail" identifier="profileSegue" id="W7P-Sn-nyE"/>
+                        <segue destination="4Gm-8N-lbO" kind="show" identifier="profileSegue" id="W7P-Sn-nyE"/>
                         <segue destination="dCo-nm-Sk0" kind="showDetail" identifier="signoutSegue" id="skc-zn-Q4u"/>
                         <segue destination="88k-vQ-JHr" kind="presentation" identifier="ScanACRSegue" id="SJU-EU-lCk"/>
                     </connections>
@@ -1035,6 +1041,10 @@ EEFydGlzdCBOYW1lA
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="editprofileIMG" translatesAutoresizingMaskIntoConstraints="NO" id="8Rw-GC-qxM">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6a2-db-gU1"/>
@@ -1251,9 +1261,11 @@ EEFydGlzdCBOYW1lA
     <resources>
         <image name="ResendBackGroundIMG" width="186.5" height="332.5"/>
         <image name="diskButtonIMG" width="334.5" height="340"/>
+        <image name="editprofileIMG" width="187.5" height="322"/>
         <image name="menuIMG" width="24" height="24"/>
         <image name="play-buttonIMG" width="63" height="63"/>
         <image name="prev-buttonIMG" width="22" height="26"/>
+        <image name="profileIMG" width="187.5" height="323"/>
         <image name="scan3IMG" width="800" height="450"/>
     </resources>
     <inferredMetricsTieBreakers>
