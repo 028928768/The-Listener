@@ -11,10 +11,10 @@ import AVFoundation
 
 
 class SongPlayerViewController: UIViewController,AVAudioPlayerDelegate {
+    
+    let ncObserver = NotificationCenter.default
     //MARK: Properties
     var selectSongList : Song?
-
-    
     var currentSongIndex : Int = 0
     var SongLists : [Song] = []
     var repeatClick: Int = 0
@@ -50,6 +50,7 @@ class SongPlayerViewController: UIViewController,AVAudioPlayerDelegate {
     var audioPlayer = AVAudioPlayer()
     let queuePlayer = AVQueuePlayer()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
        // setNavigationBarTransparents()
@@ -63,7 +64,7 @@ class SongPlayerViewController: UIViewController,AVAudioPlayerDelegate {
         prevButton.setImage(prevButtonImage, for: .normal)
         
         playCurrentSong()
-        
+        ncObserver.addObserver(self, selector: #selector(self.stopMusic), name: Notification.Name("StopMusic"), object: nil)
         
      
     }
@@ -102,6 +103,7 @@ class SongPlayerViewController: UIViewController,AVAudioPlayerDelegate {
             
             do {
                 try audioSession.setCategory(AVAudioSessionCategoryPlayback)
+               
             } catch {
                 
             }
@@ -122,6 +124,10 @@ class SongPlayerViewController: UIViewController,AVAudioPlayerDelegate {
         playCurrentSong()
         audioPlayer.play()
         playButtonOutlet.setImage(pauseButtonImage, for: .normal)
+    }
+    @objc func stopMusic(){
+        audioPlayer.stop()
+        print("notification observed - music stopped")
     }
 
     

@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import AVFoundation
 
 class PlaylistViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     
     //MARK: Properties
-    
+    let notification = NotificationCenter.default
     @IBOutlet weak var playListCover: UIImageView!
     @IBOutlet weak var playListName: UILabel!
     @IBOutlet weak var playListDiscription: UILabel!
@@ -56,7 +57,10 @@ class PlaylistViewController: UIViewController, UITableViewDelegate, UITableView
     
     //MARK: Actions
     
-   
+    @IBAction func playSession(_ sender: UIButton) {
+      notification.post(name: Notification.Name("StopMusic"), object: nil)
+    }
+    
     
     
 

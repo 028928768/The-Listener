@@ -29,6 +29,22 @@
 		154FD5662280A822001D6B08 /* Never Be the Same.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 154FD5622280A821001D6B08 /* Never Be the Same.mp3 */; };
 		154FD5672280A822001D6B08 /* Girls Like You.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 154FD5632280A822001D6B08 /* Girls Like You.mp3 */; };
 		154FD5682280A822001D6B08 /* 7 rings.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 154FD5642280A822001D6B08 /* 7 rings.mp3 */; };
+		1555D806228198430061141B /* Just_Like_This.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1555D805228198430061141B /* Just_Like_This.mp3 */; };
+		1555D8082281984E0061141B /* Magical_Winter.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1555D8072281984E0061141B /* Magical_Winter.mp3 */; };
+		1555D80A228198560061141B /* Piece_of_Sky.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1555D809228198550061141B /* Piece_of_Sky.mp3 */; };
+		1555D80C2281985D0061141B /* Waiting_For_You.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1555D80B2281985D0061141B /* Waiting_For_You.mp3 */; };
+		1555D80E228198650061141B /* Sunday_Dream.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1555D80D228198650061141B /* Sunday_Dream.mp3 */; };
+		1555D8102281A0510061141B /* Yeowooya.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1555D80F2281A0510061141B /* Yeowooya.mp3 */; };
+		1555D8142281A08C0061141B /* Im Okay - Joy ft.  Lee Hyun Woo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1555D8132281A08C0061141B /* Im Okay - Joy ft.  Lee Hyun Woo.mp3 */; };
+		1555D8162281A0B40061141B /* Shiny Boy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1555D8152281A0B40061141B /* Shiny Boy.mp3 */; };
+		1555D8182281A1020061141B /* Counting Stars at Night.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1555D8172281A1020061141B /* Counting Stars at Night.mp3 */; };
+		1555D81A2281A11B0061141B /* The Way To Me.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1555D8192281A11B0061141B /* The Way To Me.mp3 */; };
+		1555D81C2281A5310061141B /* RED.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1555D81B2281A5310061141B /* RED.mp3 */; };
+		1555D81E2281A53C0061141B /* Love Story.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1555D81D2281A53C0061141B /* Love Story.mp3 */; };
+		1555D8212281A5430061141B /* End Game.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1555D81F2281A5420061141B /* End Game.mp3 */; };
+		1555D8222281A5430061141B /* I Knew You Were Trouble.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1555D8202281A5430061141B /* I Knew You Were Trouble.mp3 */; };
+		1555D8252281A67C0061141B /* House Of The Rising Sun.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1555D8232281A67B0061141B /* House Of The Rising Sun.mp3 */; };
+		1555D8262281A67C0061141B /* Creep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1555D8242281A67C0061141B /* Creep.mp3 */; };
 		157F3E47222D1F0D006A9B2C /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F3E46222D1F0D006A9B2C /* HomeTableViewController.swift */; };
 		157F3E49222D2B81006A9B2C /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F3E48222D2B81006A9B2C /* HomeTableViewCell.swift */; };
 		157F3E4B222D3063006A9B2C /* HomeCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F3E4A222D3063006A9B2C /* HomeCollection.swift */; };
@@ -107,6 +123,22 @@
 		154FD5622280A821001D6B08 /* Never Be the Same.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Never Be the Same.mp3"; sourceTree = "<group>"; };
 		154FD5632280A822001D6B08 /* Girls Like You.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Girls Like You.mp3"; sourceTree = "<group>"; };
 		154FD5642280A822001D6B08 /* 7 rings.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "7 rings.mp3"; sourceTree = "<group>"; };
+		1555D805228198430061141B /* Just_Like_This.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Just_Like_This.mp3; sourceTree = "<group>"; };
+		1555D8072281984E0061141B /* Magical_Winter.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Magical_Winter.mp3; sourceTree = "<group>"; };
+		1555D809228198550061141B /* Piece_of_Sky.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Piece_of_Sky.mp3; sourceTree = "<group>"; };
+		1555D80B2281985D0061141B /* Waiting_For_You.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Waiting_For_You.mp3; sourceTree = "<group>"; };
+		1555D80D228198650061141B /* Sunday_Dream.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sunday_Dream.mp3; sourceTree = "<group>"; };
+		1555D80F2281A0510061141B /* Yeowooya.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Yeowooya.mp3; sourceTree = "<group>"; };
+		1555D8132281A08C0061141B /* Im Okay - Joy ft.  Lee Hyun Woo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Im Okay - Joy ft.  Lee Hyun Woo.mp3"; sourceTree = "<group>"; };
+		1555D8152281A0B40061141B /* Shiny Boy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Shiny Boy.mp3"; sourceTree = "<group>"; };
+		1555D8172281A1020061141B /* Counting Stars at Night.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Counting Stars at Night.mp3"; sourceTree = "<group>"; };
+		1555D8192281A11B0061141B /* The Way To Me.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Way To Me.mp3"; sourceTree = "<group>"; };
+		1555D81B2281A5310061141B /* RED.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = RED.mp3; sourceTree = "<group>"; };
+		1555D81D2281A53C0061141B /* Love Story.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Love Story.mp3"; sourceTree = "<group>"; };
+		1555D81F2281A5420061141B /* End Game.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "End Game.mp3"; sourceTree = "<group>"; };
+		1555D8202281A5430061141B /* I Knew You Were Trouble.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "I Knew You Were Trouble.mp3"; sourceTree = "<group>"; };
+		1555D8232281A67B0061141B /* House Of The Rising Sun.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "House Of The Rising Sun.mp3"; sourceTree = "<group>"; };
+		1555D8242281A67C0061141B /* Creep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Creep.mp3; sourceTree = "<group>"; };
 		157F3E46222D1F0D006A9B2C /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		157F3E48222D2B81006A9B2C /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		157F3E4A222D3063006A9B2C /* HomeCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollection.swift; sourceTree = "<group>"; };
@@ -229,6 +261,10 @@
 		154FD55622807A2E001D6B08 /* Lover */ = {
 			isa = PBXGroup;
 			children = (
+				1555D81F2281A5420061141B /* End Game.mp3 */,
+				1555D8202281A5430061141B /* I Knew You Were Trouble.mp3 */,
+				1555D81D2281A53C0061141B /* Love Story.mp3 */,
+				1555D81B2281A5310061141B /* RED.mp3 */,
 			);
 			path = Lover;
 			sourceTree = "<group>";
@@ -236,6 +272,11 @@
 		154FD55722807A3F001D6B08 /* Peaceful-Guitar */ = {
 			isa = PBXGroup;
 			children = (
+				1555D80D228198650061141B /* Sunday_Dream.mp3 */,
+				1555D80B2281985D0061141B /* Waiting_For_You.mp3 */,
+				1555D809228198550061141B /* Piece_of_Sky.mp3 */,
+				1555D8072281984E0061141B /* Magical_Winter.mp3 */,
+				1555D805228198430061141B /* Just_Like_This.mp3 */,
 			);
 			path = "Peaceful-Guitar";
 			sourceTree = "<group>";
@@ -243,6 +284,11 @@
 		154FD55922807A53001D6B08 /* Korean-Ost */ = {
 			isa = PBXGroup;
 			children = (
+				1555D8192281A11B0061141B /* The Way To Me.mp3 */,
+				1555D8172281A1020061141B /* Counting Stars at Night.mp3 */,
+				1555D8152281A0B40061141B /* Shiny Boy.mp3 */,
+				1555D8132281A08C0061141B /* Im Okay - Joy ft.  Lee Hyun Woo.mp3 */,
+				1555D80F2281A0510061141B /* Yeowooya.mp3 */,
 			);
 			path = "Korean-Ost";
 			sourceTree = "<group>";
@@ -250,6 +296,8 @@
 		154FD55A22807A6C001D6B08 /* Jazz */ = {
 			isa = PBXGroup;
 			children = (
+				1555D8242281A67C0061141B /* Creep.mp3 */,
+				1555D8232281A67B0061141B /* House Of The Rising Sun.mp3 */,
 			);
 			path = Jazz;
 			sourceTree = "<group>";
@@ -542,18 +590,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				154FD5652280A822001D6B08 /* Paris in the Rain.mp3 in Resources */,
+				1555D8162281A0B40061141B /* Shiny Boy.mp3 in Resources */,
 				61568884216613120096C94F /* Havana.mp3 in Resources */,
 				151B453D21983E0F00289C59 /* GoogleService-Info.plist in Resources */,
+				1555D80A228198560061141B /* Piece_of_Sky.mp3 in Resources */,
 				154FD5542280785E001D6B08 /* ME!.mp3 in Resources */,
+				1555D806228198430061141B /* Just_Like_This.mp3 in Resources */,
 				610B79562144E86500AEEC0C /* LaunchScreen.storyboard in Resources */,
 				61658A7821627BC500B5D46E /* First Time.mp3 in Resources */,
 				154FD5682280A822001D6B08 /* 7 rings.mp3 in Resources */,
+				1555D81E2281A53C0061141B /* Love Story.mp3 in Resources */,
+				1555D81A2281A11B0061141B /* The Way To Me.mp3 in Resources */,
+				1555D80E228198650061141B /* Sunday_Dream.mp3 in Resources */,
 				610B79532144E86500AEEC0C /* Assets.xcassets in Resources */,
+				1555D8182281A1020061141B /* Counting Stars at Night.mp3 in Resources */,
+				1555D8212281A5430061141B /* End Game.mp3 in Resources */,
+				1555D8142281A08C0061141B /* Im Okay - Joy ft.  Lee Hyun Woo.mp3 in Resources */,
+				1555D8102281A0510061141B /* Yeowooya.mp3 in Resources */,
 				154FD55222803572001D6B08 /* live4music.jpg in Resources */,
+				1555D8252281A67C0061141B /* House Of The Rising Sun.mp3 in Resources */,
+				1555D8262281A67C0061141B /* Creep.mp3 in Resources */,
 				154FD5662280A822001D6B08 /* Never Be the Same.mp3 in Resources */,
+				1555D8222281A5430061141B /* I Knew You Were Trouble.mp3 in Resources */,
+				1555D80C2281985D0061141B /* Waiting_For_You.mp3 in Resources */,
 				610B794E2144E86500AEEC0C /* Main.storyboard in Resources */,
+				1555D81C2281A5310061141B /* RED.mp3 in Resources */,
 				61658A7921627BC500B5D46E /* Problem.mp3 in Resources */,
 				154FD5672280A822001D6B08 /* Girls Like You.mp3 in Resources */,
+				1555D8082281984E0061141B /* Magical_Winter.mp3 in Resources */,
 				610A49AA2166882300C22EA4 /* Dark Horse.mp3 in Resources */,
 				154FD5602280A818001D6B08 /* If I Can't Have You.mp3 in Resources */,
 			);

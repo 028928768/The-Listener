@@ -171,93 +171,86 @@ class HomeTableViewController: UITableViewController {
         pop_PlayList += [song1,song2,song3,song4,song5]
         
         //Input songs into taylor-playlists
-        let meCover1 = UIImage(named: "7ringCoverIMG")
-        let meCover2 = UIImage(named: "GirlCoverIMG")
-        let meCover3 = UIImage(named: "neverCoverIMG")
-        let meCover4 = UIImage(named: "parisCoverIMG")
-        let meCover5 = UIImage(named: "IfCantCoverIMG")
-        guard let me_song1 = Song(name: "7 rings",artist: "Ariana Grande",album: "Thanks U, Next",cover: meCover1!) else {
+        let meCover1 = UIImage(named: "Me-Cover")
+        let meCover2 = UIImage(named: "LoveStoryIMG")
+        let meCover3 = UIImage(named: "RedIMG")
+        let meCover4 = UIImage(named: "EndGameIMG")
+        let meCover5 = UIImage(named: "WereTroubleIMG")
+        guard let me_song1 = Song(name: "ME!",artist: "Taylor Swift",album: "Lovers",cover: meCover1!) else {
             fatalError("Unable to instatiate song1")
         }
-        guard let me_song2 = Song(name: "Girls Like You",artist: "Maroon 5 - Adam levine,ft Cardi B",album: "Red Pill Blues",cover: meCover2!) else {
+        guard let me_song2 = Song(name: "Love Story",artist: "Taylor Swift",album: "Lovers",cover: meCover2!) else {
             fatalError("Unable to instatiate song2")
         }
-        guard let me_song3 = Song(name: "Never Be the Same",artist: "Camila Cabello",album: "Camila",cover:meCover3!) else {
+        guard let me_song3 = Song(name: "RED",artist: "Taylor Swift",album: "Lovers",cover:meCover3!) else {
             fatalError("Unable to instatiate song3")
         }
-        guard let me_song4 = Song(name: "Paris in the Rain",artist: "Lauv",album: "Like Me Better",cover: meCover4!) else {
+        guard let me_song4 = Song(name: "End Game",artist: "Taylor Swift",album: "Lovers",cover: meCover4!) else {
             fatalError("Unable to instatiate song4")
         }
-        guard let me_song5 = Song(name: "If I Can't Have You",artist: "Shawn Mendes",album:"Shawn Mendes",cover: meCover5!) else {
+        guard let me_song5 = Song(name: "I Knew You Were Trouble",artist: "Taylor Swift",album:"Lovers",cover: meCover5!) else {
             fatalError("Unable to instatiate song5")
         }
         me_PlayList += [me_song1,me_song2,me_song3,me_song4,me_song5]
         
         //Input songs into GuitarPlaylist
-        let guitarCover1 = UIImage(named: "7ringCoverIMG")
-        let guitarCover2 = UIImage(named: "GirlCoverIMG")
-        let guitarCover3 = UIImage(named: "neverCoverIMG")
-        let guitarCover4 = UIImage(named: "parisCoverIMG")
-        let guitarCover5 = UIImage(named: "IfCantCoverIMG")
-        guard let guitar_song1 = Song(name: "7 rings",artist: "Ariana Grande",album: "Thanks U, Next",cover: guitarCover1!) else {
+        let guitarCover1 = UIImage(named: "waitIMG")
+        let guitarCover2 = UIImage(named: "sundayIMG")
+        let guitarCover3 = UIImage(named: "justlikeIMG")
+        let guitarCover4 = UIImage(named: "GuitarIMG")
+        let guitarCover5 = UIImage(named: "winterIMG")
+        guard let guitar_song1 = Song(name: "Waiting_For_You",artist: "Various Artists",album: "Guitar Relaxing vol1",cover: guitarCover1!) else {
             fatalError("Unable to instatiate song1")
         }
-        guard let guitar_song2 = Song(name: "Girls Like You",artist: "Maroon 5 - Adam levine,ft Cardi B",album: "Red Pill Blues",cover: guitarCover2!) else {
+        guard let guitar_song2 = Song(name: "Sunday_Dream",artist: "Various Artists",album: "Guitar Relaxing vol1",cover: guitarCover2!) else {
             fatalError("Unable to instatiate song2")
         }
-        guard let guitar_song3 = Song(name: "Never Be the Same",artist: "Camila Cabello",album: "Camila",cover:guitarCover3!) else {
+        guard let guitar_song3 = Song(name: "Just_Like_This",artist: "Various Artists",album: "Guitar Relaxing vol1",cover:guitarCover3!) else {
             fatalError("Unable to instatiate song3")
         }
-        guard let guitar_song4 = Song(name: "Paris in the Rain",artist: "Lauv",album: "Like Me Better",cover: guitarCover4!) else {
+        guard let guitar_song4 = Song(name: "Piece_of_Sky",artist: "Various Artists",album: "Guitar Relaxing vol1",cover: guitarCover4!) else {
             fatalError("Unable to instatiate song4")
         }
-        guard let guitar_song5 = Song(name: "If I Can't Have You",artist: "Shawn Mendes",album:"Shawn Mendes",cover: guitarCover5!) else {
+        guard let guitar_song5 = Song(name: "Magical_Winter",artist: "Various Artists",album:"Guitar Relaxing vol1",cover: guitarCover5!) else {
             fatalError("Unable to instatiate song5")
         }
         guitar_PlayList += [guitar_song1,guitar_song2,guitar_song3,guitar_song4,guitar_song5]
         
         //Input songs into KoreanOst PlayList
-        let KoreanCover1 = UIImage(named: "7ringCoverIMG")
-        let KoreanCover2 = UIImage(named: "GirlCoverIMG")
-        let KoreanCover3 = UIImage(named: "neverCoverIMG")
-        let KoreanCover4 = UIImage(named: "parisCoverIMG")
-        let KoreanCover5 = UIImage(named: "IfCantCoverIMG")
-        guard let korean_song1 = Song(name: "7 rings",artist: "Ariana Grande",album: "Thanks U, Next",cover: KoreanCover1!) else {
+        let KoreanCover1 = UIImage(named: "ost1img")
+        let KoreanCover2 = UIImage(named: "ost2img")
+        let KoreanCover3 = UIImage(named: "ost3img")
+        let KoreanCover4 = UIImage(named: "ost4img")
+        let KoreanCover5 = UIImage(named: "ost5img")
+        guard let korean_song1 = Song(name: "Yeowooya",artist: "Joy (Red Velvet)",album: "The Liar And His Lover OST",cover: KoreanCover1!) else {
             fatalError("Unable to instatiate song1")
         }
-        guard let korean_song2 = Song(name: "Girls Like You",artist: "Maroon 5 - Adam levine,ft Cardi B",album: "Red Pill Blues",cover: KoreanCover2!) else {
+        guard let korean_song2 = Song(name: "Im Okay - Joy ft.  Lee Hyun Woo",artist: "Joy (Red Velvet)Lee Hyun Woo",album: "The Liar And His Lover OST",cover: KoreanCover2!) else {
             fatalError("Unable to instatiate song2")
         }
-        guard let korean_song3 = Song(name: "Never Be the Same",artist: "Camila Cabello",album: "Camila",cover:KoreanCover3!) else {
+        guard let korean_song3 = Song(name: "Shiny Boy",artist: "Joy (Red Velvet)",album: "The Liar And His Lover OST",cover:KoreanCover3!) else {
             fatalError("Unable to instatiate song3")
         }
-        guard let korean_song4 = Song(name: "Paris in the Rain",artist: "Lauv",album: "Like Me Better",cover: KoreanCover4!) else {
+        guard let korean_song4 = Song(name: "Counting Stars at Night",artist: "HONG SEO YOUNG",album: "The Liar And His Lover OST",cover: KoreanCover4!) else {
             fatalError("Unable to instatiate song4")
         }
-        guard let korean_song5 = Song(name: "If I Can't Have You",artist: "Shawn Mendes",album:"Shawn Mendes",cover: KoreanCover5!) else {
+        guard let korean_song5 = Song(name: "The Way To Me",artist: "Joy (Red Velvet)",album:"The Liar And His Lover OST",cover: KoreanCover5!) else {
             fatalError("Unable to instatiate song5")
         }
         korean_PlayList += [korean_song1,korean_song2,korean_song3,korean_song4,korean_song5]
         
         //Input songs into Jazz PlayList
-        let jazzCover = UIImage(named: "7ringCoverIMG")
+        let jazzCover = UIImage(named: "JazzIMG")
     
-        guard let jazz_song1 = Song(name: "7 rings",artist: "Ariana Grande",album: "Thanks U, Next",cover: jazzCover!) else {
+        guard let jazz_song1 = Song(name: "Creep",artist: "Haley Reinhart",album: "Postmodern Jukebox",cover: jazzCover!) else {
             fatalError("Unable to instatiate song1")
         }
-        guard let jazz_song2 = Song(name: "Girls Like You",artist: "Maroon 5 - Adam levine,ft Cardi B",album: "Red Pill Blues",cover: jazzCover!) else {
+        guard let jazz_song2 = Song(name: "House Of The Rising Sun",artist: "Hannah Huston",album: "The Voice Studio",cover: jazzCover!) else {
             fatalError("Unable to instatiate song2")
         }
-        guard let jazz_song3 = Song(name: "Never Be the Same",artist: "Camila Cabello",album: "Camila",cover:jazzCover!) else {
-            fatalError("Unable to instatiate song3")
-        }
-        guard let jazz_song4 = Song(name: "Paris in the Rain",artist: "Lauv",album: "Like Me Better",cover: jazzCover!) else {
-            fatalError("Unable to instatiate song4")
-        }
-        guard let jazz_song5 = Song(name: "If I Can't Have You",artist: "Shawn Mendes",album:"Shawn Mendes",cover: jazzCover!) else {
-            fatalError("Unable to instatiate song5")
-        }
-        jazz_PlayList += [jazz_song1,jazz_song2,jazz_song3,jazz_song4,jazz_song5]
+        
+        
+        jazz_PlayList += [jazz_song1,jazz_song2]
         
         //Input songs into Country-Playlists
         let CountryCover1 = UIImage(named: "7ringCoverIMG")
@@ -311,19 +304,19 @@ class HomeTableViewController: UITableViewController {
         let thaiCover3 = UIImage(named: "neverCoverIMG")
         let thaiCover4 = UIImage(named: "parisCoverIMG")
         let thaiCover5 = UIImage(named: "IfCantCoverIMG")
-        guard let thai_song1 = Song(name: "7 rings",artist: "Ariana Grande",album: "Thanks U, Next",cover: repCover1!) else {
+        guard let thai_song1 = Song(name: "7 rings",artist: "Ariana Grande",album: "Thanks U, Next",cover: thaiCover1!) else {
             fatalError("Unable to instatiate song1")
         }
-        guard let thai_song2 = Song(name: "Girls Like You",artist: "Maroon 5 - Adam levine,ft Cardi B",album: "Red Pill Blues",cover: repCover2!) else {
+        guard let thai_song2 = Song(name: "Girls Like You",artist: "Maroon 5 - Adam levine,ft Cardi B",album: "Red Pill Blues",cover: thaiCover2!) else {
             fatalError("Unable to instatiate song2")
         }
-        guard let thai_song3 = Song(name: "Never Be the Same",artist: "Camila Cabello",album: "Camila",cover:repCover3!) else {
+        guard let thai_song3 = Song(name: "Never Be the Same",artist: "Camila Cabello",album: "Camila",cover:thaiCover3!) else {
             fatalError("Unable to instatiate song3")
         }
-        guard let thai_song4 = Song(name: "Paris in the Rain",artist: "Lauv",album: "Like Me Better",cover: repCover4!) else {
+        guard let thai_song4 = Song(name: "Paris in the Rain",artist: "Lauv",album: "Like Me Better",cover: thaiCover4!) else {
             fatalError("Unable to instatiate song4")
         }
-        guard let thai_song5 = Song(name: "If I Can't Have You",artist: "Shawn Mendes",album:"Shawn Mendes",cover: repCover5!) else {
+        guard let thai_song5 = Song(name: "If I Can't Have You",artist: "Shawn Mendes",album:"Shawn Mendes",cover: thaiCover5!) else {
             fatalError("Unable to instatiate song5")
         }
         thai_PlayList += [thai_song1,thai_song2,thai_song3,thai_song4,thai_song5]
