@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import AVFoundation
 
 class SongViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    //MARK: Properties
     let arrowButtonImage = UIImage(named: "arrow-buttonIMG")
-    
+    let notification = NotificationCenter.default
+   // var otherAudioPlaying = AVAudioSession.sharedInstance().isOtherAudioPlaying
     
     
     @IBOutlet weak var songTableView: UITableView!
@@ -75,8 +78,14 @@ class SongViewController: UIViewController, UITableViewDelegate, UITableViewData
         return indexPath
     }
     
+    //Play and Pause function
+    
     // MARK: - Navigation
-
+    @IBAction func sessionController(_ sender: UIButton) {
+           notification.post(name: Notification.Name("StopMusic"), object: nil)
+            print("music stopped")
+    }
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)

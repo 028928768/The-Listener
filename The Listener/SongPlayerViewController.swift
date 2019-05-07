@@ -65,7 +65,7 @@ class SongPlayerViewController: UIViewController,AVAudioPlayerDelegate {
         
         playCurrentSong()
         ncObserver.addObserver(self, selector: #selector(self.stopMusic), name: Notification.Name("StopMusic"), object: nil)
-        
+      //  ncObserver.addObserver(self, selector: #selector(self.stopMusic), name: Notification.Name("PlayMusic"), object: nil)
      
     }
     override func viewDidAppear(_ animated: Bool) {

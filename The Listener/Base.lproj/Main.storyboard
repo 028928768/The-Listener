@@ -501,6 +501,14 @@
                                 <color key="barTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ou5-w2-0DD">
+                                <rect key="frame" x="269" y="561" width="106" height="106"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="diskButtonIMG"/>
+                                <connections>
+                                    <action selector="sessionController:" destination="3TB-xE-GUO" eventType="touchUpInside" id="0ic-sp-Cjf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="lOs-v3-xqH"/>
@@ -652,7 +660,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IAc-bp-rOy">
-                                <rect key="frame" x="0.0" y="64" width="375" height="359"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="403"/>
                             </imageView>
                             <visualEffectView opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" semanticContentAttribute="spatial" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AFk-rj-QiN">
                                 <rect key="frame" x="0.0" y="424" width="375" height="243"/>
@@ -1323,7 +1331,7 @@ EEFydGlzdCBOYW1lA
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="gcr-Uj-YnN"/>
-        <segue reference="dU1-LS-kym"/>
+        <segue reference="6FI-7V-5W4"/>
         <segue reference="9Ke-DP-g9U"/>
         <segue reference="skc-zn-Q4u"/>
     </inferredMetricsTieBreakers>
