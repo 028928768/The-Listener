@@ -8,9 +8,12 @@
 
 import UIKit
 
-class SearchViewController: UIViewController {
-
+class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
+    //MARK: Outlets
     
+    @IBOutlet weak var searchTableView: UITableView!
+    @IBOutlet weak var searchBar: UISearchBar!
+    var songArray = ["A","B","C","D","E","F","G","H"]
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,20 +28,24 @@ class SearchViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    //MARK: TableviewDelegates
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return songArray.count
     }
-    */
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cellIdentifier = "searchcell"
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? searchTableViewCell else {
+            fatalError("The dequeed cell is not an instance of PlayListTableViewCell")
+        }
+        
+        cell.songNameLabel.text = songArray[indexPath.row]
+        return cell
+    }
+    
     func assignBackGround(){
         let background = UIImage(named: "StorageBGIMG")
-        var imageView = UIImageView(frame: view.bounds)
+        let imageView = UIImageView(frame: view.bounds)
         imageView.contentMode = UIViewContentMode.scaleAspectFill
         imageView.clipsToBounds = true
         imageView.image = background

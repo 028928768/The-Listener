@@ -45,6 +45,7 @@
 		1555D8222281A5430061141B /* I Knew You Were Trouble.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1555D8202281A5430061141B /* I Knew You Were Trouble.mp3 */; };
 		1555D8252281A67C0061141B /* House Of The Rising Sun.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1555D8232281A67B0061141B /* House Of The Rising Sun.mp3 */; };
 		1555D8262281A67C0061141B /* Creep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1555D8242281A67C0061141B /* Creep.mp3 */; };
+		1555D8282281DB9E0061141B /* searchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1555D8272281DB9E0061141B /* searchTableViewCell.swift */; };
 		157F3E47222D1F0D006A9B2C /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F3E46222D1F0D006A9B2C /* HomeTableViewController.swift */; };
 		157F3E49222D2B81006A9B2C /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F3E48222D2B81006A9B2C /* HomeTableViewCell.swift */; };
 		157F3E4B222D3063006A9B2C /* HomeCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F3E4A222D3063006A9B2C /* HomeCollection.swift */; };
@@ -139,6 +140,7 @@
 		1555D8202281A5430061141B /* I Knew You Were Trouble.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "I Knew You Were Trouble.mp3"; sourceTree = "<group>"; };
 		1555D8232281A67B0061141B /* House Of The Rising Sun.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "House Of The Rising Sun.mp3"; sourceTree = "<group>"; };
 		1555D8242281A67C0061141B /* Creep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Creep.mp3; sourceTree = "<group>"; };
+		1555D8272281DB9E0061141B /* searchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchTableViewCell.swift; sourceTree = "<group>"; };
 		157F3E46222D1F0D006A9B2C /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		157F3E48222D2B81006A9B2C /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		157F3E4A222D3063006A9B2C /* HomeCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollection.swift; sourceTree = "<group>"; };
@@ -387,6 +389,7 @@
 				157F3E48222D2B81006A9B2C /* HomeTableViewCell.swift */,
 				15EA21E7222BF3BC00692538 /* SearchTableViewController.swift */,
 				15EA21E5222BD46E00692538 /* SearchViewController.swift */,
+				1555D8272281DB9E0061141B /* searchTableViewCell.swift */,
 				154A6FFA21A9479A005B553F /* SongDetailsViewController.swift */,
 				15CA1D77218386C00040163F /* RegisterViewController.swift */,
 				15CA1D7521836FB50040163F /* ResendViewController.swift */,
@@ -758,6 +761,7 @@
 				615688822165E4480096C94F /* SongPlayerViewController.swift in Sources */,
 				15EA21E6222BD46E00692538 /* SearchViewController.swift in Sources */,
 				157F3E8C222F021C006A9B2C /* MenuTableViewController.swift in Sources */,
+				1555D8282281DB9E0061141B /* searchTableViewCell.swift in Sources */,
 				610B79512144E86500AEEC0C /* The_Listener.xcdatamodeld in Sources */,
 				15CA1D7621836FB60040163F /* ResendViewController.swift in Sources */,
 				612840672157EB11006E9A99 /* SongViewController.swift in Sources */,
