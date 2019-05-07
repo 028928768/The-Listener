@@ -50,9 +50,9 @@ class MenuTableViewController: UITableViewController {
         switch SelectedIndex {
         case 0:
           // Main
-          //  dismiss(animated: true, completion: nil)
-          //  self.performSegue(withIdentifier: "menuCell", sender: self)
-           #selector(SWRevealViewController.revealToggle(_:))
+          // #selector(SWRevealViewController.revealToggle(_:))
+            self.revealViewController()?.revealToggle(animated: true)
+            
             
         case 1:
             //Profile
