@@ -527,7 +527,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2ZN-tE-LAn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3639.1999999999998" y="157.87106446776613"/>
+            <point key="canvasLocation" x="4102" y="158"/>
         </scene>
         <!--Search Table View Controller-->
         <scene sceneID="2Kj-p4-G1X">
@@ -589,6 +589,7 @@
                                 <rect key="frame" x="0.0" y="108" width="375" height="494"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <color key="sectionIndexBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="searchcell" rowHeight="60" id="MoR-2x-pX8" customClass="searchTableViewCell" customModule="The_Listener" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="60"/>
@@ -600,11 +601,12 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Song Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9f3-YO-z1W">
                                                     <rect key="frame" x="34" y="19" width="274" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.84332191779999999" colorSpace="custom" customColorSpace="sRGB"/>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="songNameLabel" destination="9f3-YO-z1W" id="PaS-TS-6L5"/>
@@ -649,7 +651,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gpo-Xm-HNa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1610.4000000000001" y="210.94452773613196"/>
+            <point key="canvasLocation" x="1673" y="-435"/>
         </scene>
         <!--Profile-->
         <scene sceneID="ecI-tu-t22">
@@ -682,7 +684,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WZY-Bf-eXO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3704.8000000000002" y="909.89505247376314"/>
+            <point key="canvasLocation" x="2622" y="910"/>
         </scene>
         <!--Song Player View Controller-->
         <scene sceneID="uOs-yk-bAf">
@@ -693,7 +695,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IAc-bp-rOy">
-                                <rect key="frame" x="0.0" y="64" width="375" height="403"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="359"/>
                             </imageView>
                             <visualEffectView opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" semanticContentAttribute="spatial" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AFk-rj-QiN">
                                 <rect key="frame" x="0.0" y="424" width="375" height="243"/>
@@ -859,7 +861,7 @@ EEFydGlzdCBOYW1lA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EKR-i6-apX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4428" y="157.87106446776613"/>
+            <point key="canvasLocation" x="4978" y="158"/>
         </scene>
         <!--The Listener-->
         <scene sceneID="gNO-fV-CVU">
@@ -1037,7 +1039,7 @@ EEFydGlzdCBOYW1lA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="phC-SY-m5Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1717.5999999999999" y="909.89505247376314"/>
+            <point key="canvasLocation" x="492" y="910"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="BXI-C6-UVX">
@@ -1111,7 +1113,7 @@ EEFydGlzdCBOYW1lA
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eeb-b3-Akm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2890.4000000000001" y="157.87106446776613"/>
+            <point key="canvasLocation" x="3126" y="158"/>
         </scene>
         <!--Edit Profile View Controller-->
         <scene sceneID="Pmt-80-9z1">
@@ -1147,7 +1149,7 @@ EEFydGlzdCBOYW1lA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dJf-0i-Zly" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4768.8000000000002" y="909.89505247376314"/>
+            <point key="canvasLocation" x="3694" y="910"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Evc-Y0-EGO">
@@ -1165,7 +1167,7 @@ EEFydGlzdCBOYW1lA
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QQF-W3-rbY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2765.5999999999999" y="909.89505247376314"/>
+            <point key="canvasLocation" x="1497" y="910"/>
         </scene>
         <!--Scanner-->
         <scene sceneID="0d9-qm-u73">
@@ -1364,8 +1366,8 @@ EEFydGlzdCBOYW1lA
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="gcr-Uj-YnN"/>
-        <segue reference="6FI-7V-5W4"/>
-        <segue reference="9Ke-DP-g9U"/>
+        <segue reference="dU1-LS-kym"/>
+        <segue reference="AQV-wD-5cZ"/>
         <segue reference="skc-zn-Q4u"/>
     </inferredMetricsTieBreakers>
 </document>
