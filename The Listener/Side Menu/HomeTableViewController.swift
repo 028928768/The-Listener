@@ -20,6 +20,10 @@ class HomeTableViewController: UITableViewController {
         super.viewDidLoad()
         loadPlayLists()
         setNavigationBarTransparents()
+        //set navigation bar
+        let nav = self.navigationController?.navigationBar
+        nav?.barStyle = UIBarStyle.blackTranslucent
+        nav?.tintColor = UIColor.white
         
        //sidemenu target
         sideMenuButton.target = self.revealViewController()
@@ -29,12 +33,9 @@ class HomeTableViewController: UITableViewController {
         
     }
     
-    //Top bar setting
+    
     override func viewDidAppear(_ animated: Bool) {
-        //1
-        let nav = self.navigationController?.navigationBar
-        nav?.barStyle = UIBarStyle.blackTranslucent
-        nav?.tintColor = UIColor.white
+    
 
     }
     func setNavigationBarTransparents(){
